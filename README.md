@@ -70,19 +70,23 @@ Scenario choices live in `config.py` (`SEA_LEVEL_RCP_PERCENTILE`, `EROSION_CC`).
   lower/managed, grey = not mapped nearby.
 - **Erosion bands** are NCERM recession indicators (higher = more projected
   erosion); their absolute units are not interpreted here.
-- **Nearest-frontage matching**: a break is matched to the closest NCERM frontage
-  within `EROSION_MAX_DISTANCE_M` (2 km). Beyond that it is reported as "not
-  mapped nearby" rather than risk-free — this is the V1 answer to PRD open
-  question #2 (not-at-risk vs data gap).
+- **Nearest-frontage matching**: the risk *classification* for a break comes from
+  the closest NCERM frontage within `EROSION_MAX_DISTANCE_M` (2 km). Beyond that
+  it is reported as "not mapped nearby" rather than risk-free — this is the V1
+  answer to PRD open question #2 (not-at-risk vs data gap).
 - **Recession-zone inset**: the panel embeds a small Leaflet map showing the NCERM
   erosion-zone *polygons* near the break — the projected area of land at risk.
-  With-SMP (the realistic, planned scenario) is shown by default as filled zones
-  (amber = to 2055, red = to 2105); the No-Intervention ("no defences")
-  counterfactual is a toggleable dashed outline. The zone footprint *is* the
-  recession visualisation — we deliberately do **not** present the undocumented
-  numeric band as a metres figure.
-- **Geometry is simplified** (Ramer–Douglas–Peucker, ~3 m tolerance) and rounded
-  to 5 dp before storage, keeping `surf_breaks.json` near ~1 MB instead of ~7 MB.
+  The displayed zone merges **every frontage within `EROSION_ZONE_RADIUS_M`
+  (1 km)** of the break into one MultiPolygon, so the map shows a useful stretch
+  of beach rather than one short segment. Each frontage is a whole NCERM source
+  unit — nothing is clipped. With-SMP (the realistic, planned scenario) is shown
+  by default as filled zones (amber = to 2055, red = to 2105); the No-Intervention
+  ("no defences") counterfactual is a toggleable dashed outline. The zone
+  footprint *is* the recession visualisation — we deliberately do **not** present
+  the undocumented numeric band as a metres figure.
+- **Geometry is simplified** (Ramer–Douglas–Peucker, ~11 m tolerance), rounded to
+  4 dp, with sub-~15 m speck polygons dropped, before storage — sub-pixel at the
+  inset's scale but keeps `surf_breaks.json` an order of magnitude smaller.
 - **Sea level** polygons sit offshore, so the point is buffered outward until
   polygons are hit; overlapping polygons within the buffer are averaged.
 - Deferred to later iterations: sea temperature, MMO1064 overlay, time-series
