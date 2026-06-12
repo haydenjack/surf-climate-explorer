@@ -1,0 +1,340 @@
+/* Surf Spot Climate Resilience Explorer — restyled.
+   Palette: warm blush, taupe, baby blue, dark navy. Inter typeface.
+   Mobile-first. Side drawer on desktop, bottom sheet on mobile. */
+
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+   :root {
+     /* Core palette — drawn from the uploaded swatch */
+     --blush:       #c9bfba;   /* warm pinkish-grey */
+     --taupe:       #8c7b72;   /* warm brown-grey   */
+     --baby-blue:   #6b8db5;   /* muted steel-blue  */
+     --navy:        #192534;   /* dark navy         */
+     --near-black:  #0e1720;   /* deep near-black   */
+   
+     /* Functional aliases */
+     --ocean-deep:  var(--navy);
+     --ocean:       var(--baby-blue);
+     --ocean-light: #89b3d4;   /* lighter baby blue for accents */
+     --sand:        #f0e8d8;   /* warm sandy background */
+     --sand-dark:   #e0d4c0;   /* slightly deeper sand  */
+     --ink:         #1a2a35;
+     --muted:       #6e7f8d;
+     --panel-bg:    #faf8f5;   /* warm off-white panel  */
+   
+     --risk-high:     #c0392b;
+     --risk-moderate: #d4850a;
+     --risk-low:      #2a9d8f;
+     --risk-unknown:  #9aa9b4;
+   
+     --shadow: 0 4px 28px rgba(25, 37, 52, 0.16);
+     --radius: 14px;
+   }
+   
+   * { box-sizing: border-box; }
+   
+   html, body {
+     margin: 0;
+     height: 100%;
+     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+     color: var(--ink);
+     background: var(--near-black);
+   }
+   
+   /* ============================================================
+      HEADER — solid pill-style bar, no gradient
+      ============================================================ */
+   .app-header {
+     position: absolute;
+     top: 12px; left: 14px;
+     z-index: 1000;
+     /* Solid pill — no gradient */
+     background: var(--navy);
+     color: #fff;
+     padding: 10px 18px 10px 16px;
+     border-radius: 10px;
+     pointer-events: none;
+     border-left: 4px solid var(--baby-blue);
+     box-shadow: var(--shadow);
+     max-width: calc(100vw - 28px);
+   }
+   .app-header h1 {
+     margin: 0;
+     font-size: 1.05rem;
+     font-weight: 700;
+     letter-spacing: -0.2px;
+     color: #fff;
+   }
+   .tagline {
+     margin: 3px 0 0;
+     font-size: 0.73rem;
+     font-weight: 400;
+     color: var(--blush);
+     opacity: 0.9;
+   }
+   
+   /* ============================================================
+      MAP
+      ============================================================ */
+   #map {
+     position: absolute;
+     inset: 0;
+     z-index: 1;
+   }
+   
+   /* Push Leaflet zoom controls down so they clear the header pill.
+      The header pill is ~28px top offset + ~60px height = ~88px total.
+      We give it a comfortable 100px clearance. */
+   .leaflet-top.leaflet-left {
+     top: 100px !important;
+   }
+   
+   /* ============================================================
+      LEGEND
+      ============================================================ */
+   .legend {
+     position: absolute;
+     bottom: 18px; left: 14px;
+     z-index: 1000;
+     background: rgba(250, 248, 245, 0.96);
+     border-radius: 10px;
+     padding: 10px 14px;
+     box-shadow: var(--shadow);
+     font-size: 0.72rem;
+     font-weight: 500;
+     display: flex;
+     flex-direction: column;
+     gap: 4px;
+     border-top: 3px solid var(--baby-blue);
+   }
+   .legend-title {
+     font-weight: 700;
+     margin-bottom: 3px;
+     color: var(--navy);
+     font-size: 0.74rem;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+   }
+   .legend-item { display: flex; align-items: center; gap: 7px; color: var(--ink); }
+   .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; border: 1.5px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+   .risk-high     { background: var(--risk-high); }
+   .risk-moderate { background: var(--risk-moderate); }
+   .risk-low      { background: var(--risk-low); }
+   .risk-unknown  { background: var(--risk-unknown); }
+   
+   /* ============================================================
+      PANEL
+      ============================================================ */
+   .panel {
+     position: absolute;
+     z-index: 1100;
+     background: var(--panel-bg);
+     box-shadow: var(--shadow);
+     overflow-y: auto;
+     transition: transform 0.28s ease;
+   }
+   
+   /* Desktop: right-hand side drawer */
+   @media (min-width: 721px) {
+     .panel {
+       top: 0; right: 0;
+       width: 34vw;
+       min-width: 380px;
+       max-width: 620px;
+       height: 100%;
+       transform: translateX(100%);
+       border-left: 4px solid var(--baby-blue);
+     }
+     .panel.open { transform: translateX(0); }
+   }
+   
+   /* Mobile: bottom sheet */
+   @media (max-width: 720px) {
+     .panel {
+       left: 0; right: 0; bottom: 0;
+       max-height: 72%;
+       transform: translateY(100%);
+       border-radius: var(--radius) var(--radius) 0 0;
+       border-top: 4px solid var(--baby-blue);
+     }
+     .panel.open { transform: translateY(0); }
+     .app-header h1 { font-size: 0.95rem; }
+     .app-header { top: 8px; left: 8px; }
+     .leaflet-top.leaflet-left { top: 108px !important; }
+   }
+   
+   .panel[hidden] { display: block; } /* keep transitions; visibility via transform */
+   
+   .panel-close {
+     position: sticky;
+     top: 10px;
+     float: right;
+     margin: 10px 10px 0 0;
+     border: none;
+     background: var(--sand-dark);
+     color: var(--navy);
+     width: 32px; height: 32px;
+     border-radius: 50%;
+     font-size: 1.3rem;
+     line-height: 1;
+     cursor: pointer;
+     transition: background 0.15s;
+   }
+   .panel-close:hover { background: var(--blush); }
+   
+   #panel-content { padding: 20px 22px 36px; }
+   
+   .break-name {
+     margin: 4px 0 3px;
+     font-size: 1.35rem;
+     font-weight: 700;
+     color: var(--navy);
+     letter-spacing: -0.3px;
+   }
+   .break-region {
+     margin: 0 0 14px;
+     color: var(--taupe);
+     font-size: 0.78rem;
+     text-transform: uppercase;
+     letter-spacing: 0.8px;
+     font-weight: 600;
+   }
+   
+   .indicator {
+     margin: 18px 0;
+     padding-top: 14px;
+     border-top: 1px solid var(--sand-dark);
+   }
+   .indicator h3 {
+     margin: 0 0 3px;
+     font-size: 0.96rem;
+     font-weight: 700;
+     color: var(--baby-blue);
+   }
+   .indicator .scenario {
+     font-size: 0.7rem;
+     color: var(--muted);
+     margin: 0 0 10px;
+   }
+   .plain-english {
+     font-size: 0.81rem;
+     color: var(--ink);
+     background: var(--sand);
+     padding: 9px 12px;
+     border-radius: 8px;
+     margin: 10px 0;
+     border-left: 3px solid var(--baby-blue);
+     line-height: 1.5;
+   }
+   
+   /* Risk pill */
+   .pill {
+     display: inline-block;
+     padding: 3px 11px;
+     border-radius: 999px;
+     font-size: 0.74rem;
+     font-weight: 700;
+     color: #fff;
+     letter-spacing: 0.2px;
+   }
+   .pill.risk-high     { background: var(--risk-high); }
+   .pill.risk-moderate { background: var(--risk-moderate); }
+   .pill.risk-low      { background: var(--risk-low); }
+   .pill.risk-unknown  { background: var(--risk-unknown); }
+   
+   /* Data tables */
+   table.data {
+     width: 100%;
+     border-collapse: collapse;
+     font-size: 0.79rem;
+     margin-top: 8px;
+   }
+   table.data th, table.data td {
+     text-align: left;
+     padding: 6px 7px;
+     border-bottom: 1px solid var(--sand-dark);
+   }
+   table.data th {
+     color: var(--muted);
+     font-weight: 600;
+     font-size: 0.72rem;
+     text-transform: uppercase;
+     letter-spacing: 0.4px;
+   }
+   .unavailable { color: var(--muted); font-style: italic; }
+   
+   /* Sea level sparkline chart */
+   .chart { width: 100%; height: 130px; margin-top: 8px; }
+   .chart .area { fill: rgba(107, 141, 181, 0.15); }
+   .chart .line { fill: none; stroke: var(--baby-blue); stroke-width: 2; }
+   .chart .axis { stroke: var(--sand-dark); stroke-width: 1; }
+   .chart text { fill: var(--muted); font-size: 9px; font-family: 'Inter', sans-serif; }
+   
+   /* Recession-zone inset map */
+   .recession { margin-top: 18px; }
+   .recession-head {
+     display: flex; justify-content: space-between; align-items: center;
+     gap: 10px; flex-wrap: wrap;
+   }
+   .recession-title {
+     font-size: 0.82rem;
+     font-weight: 700;
+     color: var(--navy);
+   }
+   .tgl {
+     font-size: 0.71rem;
+     color: var(--muted);
+     display: inline-flex;
+     align-items: center;
+     gap: 5px;
+     cursor: pointer;
+   }
+   .inset-map {
+     height: 230px;
+     margin-top: 8px;
+     border: 1px solid var(--sand-dark);
+     border-radius: 10px;
+     overflow: hidden;
+     z-index: 0;
+   }
+   .inset-legend {
+     display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+     font-size: 0.69rem; color: var(--muted); margin-top: 7px;
+   }
+   .inset-legend .sw {
+     width: 12px; height: 12px; border-radius: 3px;
+     display: inline-block; vertical-align: -2px; margin-right: 4px;
+   }
+   .inset-legend .sw.mt { background: rgba(212, 133, 10, 0.55); }
+   .inset-legend .sw.lt { background: rgba(192, 57, 43, 0.45); }
+   .inset-legend .sw.nfi { background: transparent; border: 2px dashed #7a0010; }
+   .inset-note { opacity: 0.8; font-style: italic; }
+   
+   /* Disclaimer */
+   .disclaimer {
+     margin-top: 22px;
+     font-size: 0.71rem;
+     color: var(--muted);
+     border-top: 1px dashed var(--sand-dark);
+     padding-top: 12px;
+     line-height: 1.5;
+   }
+   
+   /* Footer attribution */
+   .app-footer {
+     position: absolute;
+     bottom: 0; right: 0;
+     z-index: 1000;
+     font-size: 0.63rem;
+     color: var(--blush);
+     background: rgba(14, 23, 32, 0.72);
+     padding: 4px 10px;
+     border-radius: 7px 0 0 0;
+     font-weight: 500;
+   }
+   .app-footer a { color: var(--ocean-light); }
+   
+   /* Marker selection glow */
+   .leaflet-interactive.selected {
+     filter: drop-shadow(0 0 7px rgba(107, 141, 181, 0.95));
+   }

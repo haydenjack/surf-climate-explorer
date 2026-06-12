@@ -1,0 +1,2 @@
+# Pre-processing pipeline dependencies (frontend has none — it uses CDN Leaflet).
+requests>=2.31

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Surf Spot Climate Resilience Explorer</title>
+  <meta name="description" content="Explore how climate change is projected to reshape England's surf breaks." />
+
+  <!-- Inter typeface -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet (CDN). No API key required; uses OpenStreetMap tiles. -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Surf Spot Climate Resilience Explorer</h1>
+    <p class="tagline">How climate change is projected to reshape England's surf breaks</p>
+  </header>
+
+  <div id="map" aria-label="Map of England surf breaks"></div>
+
+  <!-- Map legend -->
+  <div class="legend" id="legend">
+    <span class="legend-title">Long-term erosion risk</span>
+    <span class="legend-item"><i class="dot risk-high"></i>Higher</span>
+    <span class="legend-item"><i class="dot risk-moderate"></i>Moderate</span>
+    <span class="legend-item"><i class="dot risk-low"></i>Lower / managed</span>
+    <span class="legend-item"><i class="dot risk-unknown"></i>Not mapped</span>
+  </div>
+
+  <!-- Break profile panel: side drawer on desktop, bottom sheet on mobile -->
+  <aside id="panel" class="panel" aria-live="polite" hidden>
+    <button class="panel-close" id="panel-close" aria-label="Close panel">&times;</button>
+    <div id="panel-content"></div>
+  </aside>
+
+  <footer class="app-footer" id="attribution"></footer>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="app.js"></script>
+</body>
+</html>
