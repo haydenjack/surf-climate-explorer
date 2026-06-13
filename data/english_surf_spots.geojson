@@ -1,0 +1,3781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4771,
+          52.8557
+        ]
+      },
+      "properties": {
+        "spot_id": "613282a64924a8bf64a65bea",
+        "name": "Bacton",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.303,
+          52.933
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709cf3",
+        "name": "Cromer Pier",
+        "subregion": "East Anglia",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.73653,
+          52.56968
+        ]
+      },
+      "properties": {
+        "spot_id": "613147a930cae76d3b6f48bb",
+        "name": "Gorleston",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7391,
+          52.603
+        ]
+      },
+      "properties": {
+        "spot_id": "613145d2f73fc6dc80aada92",
+        "name": "Great Yarmouth",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.749,
+          52.466
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709cf5",
+        "name": "Lowestoft",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.439,
+          52.8789
+        ]
+      },
+      "properties": {
+        "spot_id": "613148d39046a0bb3048b046",
+        "name": "Mundesley",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.289,
+          52.936
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709cf2",
+        "name": "Runton",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.603,
+          52.79
+        ]
+      },
+      "properties": {
+        "spot_id": "61328b40b860000716d8a867",
+        "name": "Sea Palling",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.693,
+          52.334
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709cf6",
+        "name": "Southwold",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.501,
+          52.843
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a770909f",
+        "name": "Walcott",
+        "subregion": "East Anglia",
+        "relivable_rating": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6994,
+          52.7173
+        ]
+      },
+      "properties": {
+        "spot_id": "613295f5735ce57adc5008ad",
+        "name": "Winterton-on-Sea",
+        "subregion": "East Anglia",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.55516,
+          50.83565
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708ca5",
+        "name": "Bude Crooklets",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.55437,
+          50.8316
+        ]
+      },
+      "properties": {
+        "spot_id": "5a282eb11d8788001b7967a1",
+        "name": "Bude Summerleaze",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.03,
+          50.535
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b3",
+        "name": "Constantine",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.641,
+          50.743
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090af",
+        "name": "Crackington Haven",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.127,
+          50.408
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090ba",
+        "name": "Crantock",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.103,
+          50.426
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090bd",
+        "name": "Cribbar",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.92883,
+          50.559465
+        ]
+      },
+      "properties": {
+        "spot_id": "61bd0f16a9fdce2918d7929f",
+        "name": "Daymer Bay",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.55863,
+          50.875666
+        ]
+      },
+      "properties": {
+        "spot_id": "61bd3a8086787d357dc2dee3",
+        "name": "Duckpool",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.079,
+          50.418
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709cef",
+        "name": "Great Western",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.997,
+          50.543
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b2",
+        "name": "Harlyn",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.149,
+          50.394
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090be",
+        "name": "Holywell Bay",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.1,
+          50.4229
+        ]
+      },
+      "properties": {
+        "spot_id": "6139319ef1349483a6f4a13d",
+        "name": "Little Fistral",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.06934,
+          50.42255985620887
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b9",
+        "name": "Lusty Glaze",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.03871,
+          50.46925105120953
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b6",
+        "name": "Mawgan Porth",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.09917,
+          50.41916667
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709cec",
+        "name": "North Fistral Beach",
+        "subregion": "North Cornwall",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.55562,
+          50.847957
+        ]
+      },
+      "properties": {
+        "spot_id": "61bd38599946810bd0377f1e",
+        "name": "Northcott Mouth",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.155,
+          50.367
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c0",
+        "name": "Perran Sands",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.15889,
+          50.34833333
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c94",
+        "name": "Perranporth",
+        "subregion": "North Cornwall",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.925,
+          50.577
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b1",
+        "name": "Polzeath",
+        "subregion": "North Cornwall",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.06669282913208,
+          50.42700276309305
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b8",
+        "name": "Porth",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0314,
+          50.5116
+        ]
+      },
+      "properties": {
+        "spot_id": "61393250b91b2a581a31dac2",
+        "name": "Porthcothan Bay",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.47461,
+          50.209365
+        ]
+      },
+      "properties": {
+        "spot_id": "61bd083337bb4a008eab6844",
+        "name": "Porthminster Beach",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.561,
+          50.862
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090aa",
+        "name": "Sandymouth",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.10353,
+          50.41464
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709ced",
+        "name": "South Fistral Beach",
+        "subregion": "North Cornwall",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.075,
+          50.419
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090bb",
+        "name": "Tolcarne",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.084,
+          50.417
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090bc",
+        "name": "Towan",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.765,
+          50.646
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090ae",
+        "name": "Trebarwith Strand",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.20277738571167,
+          50.32127176553899
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c93",
+        "name": "Trevaunance Cove",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.981,
+          50.547
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b0",
+        "name": "Trevone",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.029,
+          50.528
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b5",
+        "name": "Treyarnon",
+        "subregion": "North Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.04622,
+          50.444688234298745
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708ca6",
+        "name": "Watergate Bay",
+        "subregion": "North Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.564,
+          50.792
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090ad",
+        "name": "Widemouth Bay",
+        "subregion": "North Cornwall",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.34417,
+          50.990242183844146
+        ]
+      },
+      "properties": {
+        "spot_id": "61394976ea00f8b5ca484b8e",
+        "name": "Bucks Mills",
+        "subregion": "North Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.04218,
+          51.2084596927577
+        ]
+      },
+      "properties": {
+        "spot_id": "5d6ffa60c5015800018f660b",
+        "name": "Combe Martin",
+        "subregion": "North Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.21430826187,
+          51.1790739488
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090ab",
+        "name": "Combesgate",
+        "subregion": "North Devon",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.24083,
+          51.13027778
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708ca4",
+        "name": "Croyde",
+        "subregion": "North Devon",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0971,
+          51.2115589552812
+        ]
+      },
+      "properties": {
+        "spot_id": "61394f3afdfcd734116b531b",
+        "name": "Hele Bay",
+        "subregion": "North Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.82583,
+          51.23472222
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708ca2",
+        "name": "Lynmouth",
+        "subregion": "North Devon",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.46335,
+          51.207668
+        ]
+      },
+      "properties": {
+        "spot_id": "6139485519d668f76927012c",
+        "name": "Minehead",
+        "subregion": "North Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.22333,
+          51.15111111
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708ca1",
+        "name": "Putsborough",
+        "subregion": "North Devon",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.22952,
+          51.1139223905
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708e10",
+        "name": "Saunton",
+        "subregion": "North Devon",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.24,
+          51.047
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090b4",
+        "name": "Westward Ho!",
+        "subregion": "North Devon",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.218,
+          51.172
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090ac",
+        "name": "Woolacombe Bay",
+        "subregion": "North Devon",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.60458,
+          55.38778
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c9e",
+        "name": "Alnmouth",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.69835,
+          55.61044
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c9f",
+        "name": "Bamburgh",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.62838,
+          55.53468
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a770907c",
+        "name": "Beadnell Bay",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.49549,
+          55.11564
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a770907d",
+        "name": "Blyth Beach",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.36208,
+          54.24686
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c9d",
+        "name": "Cayton Bay",
+        "subregion": "Northeast England",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.43054,
+          55.03451
+        ]
+      },
+      "properties": {
+        "spot_id": "61325cedb6396238ebdfd8e6",
+        "name": "Cullercoats",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.61205,
+          55.49966
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708ca0",
+        "name": "Embleton Bay",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.28249,
+          54.20751
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc40978adcd21f8cb487a",
+        "name": "Filey",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.15892,
+          53.91339
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709086",
+        "name": "Hornsea",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.42299,
+          55.02593
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709084",
+        "name": "Longsands",
+        "subregion": "Northeast England",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.09237,
+          54.62567
+        ]
+      },
+      "properties": {
+        "spot_id": "6130067deb3d9f2a79ea34b5",
+        "name": "Marske to Tees",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.08608,
+          54.62373
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709083",
+        "name": "Redcar",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.96739,
+          54.58702
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c99",
+        "name": "Saltburn",
+        "subregion": "Northeast England",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.65568,
+          54.49852
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c9c",
+        "name": "Sandsend",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.39845,
+          54.29078
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709088",
+        "name": "Scarborough North Bay",
+        "subregion": "Northeast England",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.17997,
+          54.65996
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709081",
+        "name": "Seaton Carew",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.47652,
+          55.08851
+        ]
+      },
+      "properties": {
+        "spot_id": "65c36a8d7c0c29a1bd7fd850",
+        "name": "Seaton Sluice",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.34974,
+          53.14648
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc35806a1e5c60e2db693",
+        "name": "Skegness",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.39339,
+          54.27809
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709087",
+        "name": "South Bay",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.40708,
+          54.99884
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709082",
+        "name": "South Shields",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.20768,
+          54.71074
+        ]
+      },
+      "properties": {
+        "spot_id": "61313ad0f7158a61d3f8e789",
+        "name": "Steetley Beach",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.35447,
+          54.91205
+        ]
+      },
+      "properties": {
+        "spot_id": "604a7a8c3a388458aba839b3",
+        "name": "Sunderland",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.28329,
+          53.32037
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc2c678adcdc5e5cb4874",
+        "name": "Sutton on Sea",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.12874,
+          54.63753
+        ]
+      },
+      "properties": {
+        "spot_id": "6131408465ca88852ab5f08f",
+        "name": "The Gare",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.61862,
+          54.49257
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709085",
+        "name": "Whitby Beach",
+        "subregion": "Northeast England",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.44394,
+          55.04878
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a770907f",
+        "name": "Whitley Bay",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.03605,
+          53.73178
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc07caf6396009292a8a1",
+        "name": "Withernsea",
+        "subregion": "Northeast England",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.73221,
+          50.336261
+        ]
+      },
+      "properties": {
+        "spot_id": "640b9e21e920302787e1e81f",
+        "name": "Carlyon Beach",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3698,
+          50.360509
+        ]
+      },
+      "properties": {
+        "spot_id": "61c11ea39cbe719094f23bcf",
+        "name": "Downderry",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.06674,
+          50.14389
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c4",
+        "name": "Falmouth",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45117,
+          50.351914
+        ]
+      },
+      "properties": {
+        "spot_id": "640b9e15e92030503ee1e519",
+        "name": "Looe",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0893,
+          50.1253
+        ]
+      },
+      "properties": {
+        "spot_id": "613920f8ef899138b1d66c81",
+        "name": "Maenporth Beach",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43589,
+          50.36089
+        ]
+      },
+      "properties": {
+        "spot_id": "61c11d00903b3545e94dd9cc",
+        "name": "Millendreath",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.69656,
+          50.3468
+        ]
+      },
+      "properties": {
+        "spot_id": "61c11ab1903b35ad994d54b1",
+        "name": "Par Sands",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9455,
+          50.2042
+        ]
+      },
+      "properties": {
+        "spot_id": "61390740e3a39f95b5bc1f2d",
+        "name": "Pendower Beach",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7799,
+          50.2888
+        ]
+      },
+      "properties": {
+        "spot_id": "604b95b0219e49fe952ac4c0",
+        "name": "Pentewan",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.68205,
+          50.338237
+        ]
+      },
+      "properties": {
+        "spot_id": "61c11bbfda2e0467414ffb2e",
+        "name": "Polkerris",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.76521,
+          50.323082
+        ]
+      },
+      "properties": {
+        "spot_id": "640b9e1bde81d54f6c0e6615",
+        "name": "Porthpean",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.31594,
+          50.361677
+        ]
+      },
+      "properties": {
+        "spot_id": "61c11fc624dd6ce08fa45f57",
+        "name": "Portwrinkle",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.38598,
+          50.363894
+        ]
+      },
+      "properties": {
+        "spot_id": "605e6cf85b5f7230986891c5",
+        "name": "Seaton Beach",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.076,
+          50.14
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c3",
+        "name": "Swanpool",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.27163,
+          50.352826
+        ]
+      },
+      "properties": {
+        "spot_id": "61c120d7903b35ccbc4eaa5c",
+        "name": "Tregantle",
+        "subregion": "South Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.278,
+          50.352
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c5",
+        "name": "Whitsand Bay",
+        "subregion": "South Cornwall",
+        "relivable_rating": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.88536,
+          50.27897
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c9",
+        "name": "Bantham",
+        "subregion": "South Devon",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0951,
+          50.6848
+        ]
+      },
+      "properties": {
+        "spot_id": "613b99af6a25625a8eccc524",
+        "name": "Beer Point",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8934,
+          50.2805
+        ]
+      },
+      "properties": {
+        "spot_id": "604bc5c5ab677d2dddb8cb82",
+        "name": "Bigbury",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.61025,
+          50.31830690138395
+        ]
+      },
+      "properties": {
+        "spot_id": "6139290ff187b87bdd8d8074",
+        "name": "Blackpool Sands",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1294,
+          50.6873
+        ]
+      },
+      "properties": {
+        "spot_id": "613ba013f9041d2943321fe6",
+        "name": "Branscombe Beach",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.55448,
+          50.407128
+        ]
+      },
+      "properties": {
+        "spot_id": "61c1241061c69f2be0a7568d",
+        "name": "Broadsands",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3195,
+          50.6278
+        ]
+      },
+      "properties": {
+        "spot_id": "613b9e00dab50d01061718d3",
+        "name": "Budleigh Salterton",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.90062,
+          50.28467778071562
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c7",
+        "name": "Challaborough",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4675,
+          50.5752
+        ]
+      },
+      "properties": {
+        "spot_id": "613b9b4e915e7b0e471825de",
+        "name": "Dawlish",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.43721,
+          50.599833
+        ]
+      },
+      "properties": {
+        "spot_id": "61c1262261c69f7f53a7c37b",
+        "name": "Dawlish Warren",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.41,
+          50.61
+        ]
+      },
+      "properties": {
+        "spot_id": "604b949c3a2c552aed3b0fdd",
+        "name": "Exmouth",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5586,
+          50.4239
+        ]
+      },
+      "properties": {
+        "spot_id": "6138ff9e4b5b40a9c0f38074",
+        "name": "Goodrington Sands",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.85926,
+          50.246652
+        ]
+      },
+      "properties": {
+        "spot_id": "61c6152018c0463275406e95",
+        "name": "Hope Cove",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.95266,
+          50.30931
+        ]
+      },
+      "properties": {
+        "spot_id": "61c121aa903b3509bf4eda0b",
+        "name": "Mothecombe",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.558,
+          50.438
+        ]
+      },
+      "properties": {
+        "spot_id": "604b906f909f8fb8d1e1a768",
+        "name": "Paignton",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5547,
+          50.4425
+        ]
+      },
+      "properties": {
+        "spot_id": "613902c0065181634b2d7bae",
+        "name": "Preston Beach",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.36664,
+          50.609133
+        ]
+      },
+      "properties": {
+        "spot_id": "61c126f661c69fc905a7ef60",
+        "name": "Sandy Bay",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0694,
+          50.7027
+        ]
+      },
+      "properties": {
+        "spot_id": "613ba08d0a40ef2200b1ca09",
+        "name": "Seaton",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2368,
+          50.6756
+        ]
+      },
+      "properties": {
+        "spot_id": "604a7f34c8c32d683355303b",
+        "name": "Sidmouth",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6445,
+          50.286
+        ]
+      },
+      "properties": {
+        "spot_id": "6138fe50253aa7e580d8997b",
+        "name": "Slapton Sands",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.49,
+          50.55
+        ]
+      },
+      "properties": {
+        "spot_id": "604f78b169b0fc122a53c33a",
+        "name": "Teignmouth",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.86214,
+          50.26406
+        ]
+      },
+      "properties": {
+        "spot_id": "61c122dbda2e04967d517eaa",
+        "name": "Thurlestone",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4812,
+          50.4289
+        ]
+      },
+      "properties": {
+        "spot_id": "640b9e27606c4563f2f4b26a",
+        "name": "Torbay",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.086,
+          50.315
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c6",
+        "name": "Wembury",
+        "subregion": "South Devon",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.47253,
+          50.83651370492595
+        ]
+      },
+      "properties": {
+        "spot_id": "613fb969b02b23d3d70ecd2d",
+        "name": "Bexhill-on-Sea",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2,
+          50.74
+        ]
+      },
+      "properties": {
+        "spot_id": "613bcd30aef7046f44c02f20",
+        "name": "Birling Gap",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.67452,
+          50.781302
+        ]
+      },
+      "properties": {
+        "spot_id": "61c12f6b903b3557ce519d5a",
+        "name": "Bognor Regis",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.86,
+          50.76
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090a1",
+        "name": "Bracklesham Bay",
+        "subregion": "Southern England East",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.13922,
+          50.81819
+        ]
+      },
+      "properties": {
+        "spot_id": "61ba7029a052dac52a845758",
+        "name": "Brighton",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0923,
+          50.8114
+        ]
+      },
+      "properties": {
+        "spot_id": "604bc4e9909f8fae5be1a78f",
+        "name": "Brighton Marina",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1455,
+          50.819304496632945
+        ]
+      },
+      "properties": {
+        "spot_id": "5b0d97856f349c001a3b7cab",
+        "name": "Brighton West Pier",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3197,
+          50.8078
+        ]
+      },
+      "properties": {
+        "spot_id": "613be5026fd17c26d1f9f69c",
+        "name": "Calshot",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.796,
+          50.9331
+        ]
+      },
+      "properties": {
+        "spot_id": "604bca4106f62cd01d31481e",
+        "name": "Camber Sands",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9747,
+          50.9126
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd4d3e2cf5db6fdece9c5",
+        "name": "Dungeness",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.876,
+          50.765
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a770909d",
+        "name": "East Wittering",
+        "subregion": "Southern England East",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.291,
+          50.7639
+        ]
+      },
+      "properties": {
+        "spot_id": "613bcf8be27454d2b96e67ae",
+        "name": "Eastbourne",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6716,
+          50.8753
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd55ce2cf5d0c46ece9cb",
+        "name": "Fairlight",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1913,
+          51.0814
+        ]
+      },
+      "properties": {
+        "spot_id": "604bc812c27c3c577be08ac4",
+        "name": "Folkestone",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5755,
+          50.8527
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd276f465600f6b7edb5d",
+        "name": "Hastings",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9803,
+          50.7798
+        ]
+      },
+      "properties": {
+        "spot_id": "604bc67d6bec13ed6e0cf33b",
+        "name": "Hayling Island",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1371,
+          51.3723
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd4131e5772d9940e6dfa",
+        "name": "Herne Bay",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2345,
+          50.8163
+        ]
+      },
+      "properties": {
+        "spot_id": "613be4741cd8ffb0726a817f",
+        "name": "Hill Head",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2284,
+          50.8275
+        ]
+      },
+      "properties": {
+        "spot_id": "601896c5797ce97445fac470",
+        "name": "Hot Pipe",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.17039,
+          50.823182
+        ]
+      },
+      "properties": {
+        "spot_id": "61ba6e871679e26eb942f058",
+        "name": "Hove",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.449,
+          51.38
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a7709093",
+        "name": "Joss Bay",
+        "subregion": "Southern England East",
+        "relivable_rating": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5527,
+          50.7198
+        ]
+      },
+      "properties": {
+        "spot_id": "613be8cc970caf2d3338345f",
+        "name": "Keyhaven",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3238,
+          50.8189
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd608196d8505f9f1896c",
+        "name": "Lancing Beach",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5331,
+          50.8018
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd0e736d511e73e6b38b9",
+        "name": "Littlehampton",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.37689,
+          51.388889
+        ]
+      },
+      "properties": {
+        "spot_id": "613fb82de775ff4144eae4e3",
+        "name": "Main Sands",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.04381,
+          50.77938
+        ]
+      },
+      "properties": {
+        "spot_id": "613fbed1dd594237a8d3dd86",
+        "name": "Newhaven",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.35314,
+          50.81111
+        ]
+      },
+      "properties": {
+        "spot_id": "613fbfa15ca3bc1680db3452",
+        "name": "Pevensey Bay",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.42537,
+          51.331661
+        ]
+      },
+      "properties": {
+        "spot_id": "613fba06c6300f068257306d",
+        "name": "Ramsgate Main Beach",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.38143,
+          51.28918484588586
+        ]
+      },
+      "properties": {
+        "spot_id": "60df8c1353e32275590dc891",
+        "name": "Sandwich Bay",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.79654,
+          50.724605
+        ]
+      },
+      "properties": {
+        "spot_id": "61c12ed861c69fe59fa9825d",
+        "name": "Selsey Beach",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7457,
+          51.5299
+        ]
+      },
+      "properties": {
+        "spot_id": "613bce46e080751d2530bc17",
+        "name": "Southend on Sea",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0728,
+          50.7788
+        ]
+      },
+      "properties": {
+        "spot_id": "613be7278a064be58b2b92bf",
+        "name": "Southsea",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.06697,
+          50.78095
+        ]
+      },
+      "properties": {
+        "spot_id": "613bcecb3d7c4a043b49527e",
+        "name": "Tidemills",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4458,
+          51.3581
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd1831e577244cd0e6dee",
+        "name": "Viking Bay",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2803,
+          51.8481
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd33b1e5772d2330e6df4",
+        "name": "Walton-on-the-Naze",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9084,
+          50.7739
+        ]
+      },
+      "properties": {
+        "spot_id": "604b93727e36356e3c8d9822",
+        "name": "West Wittering",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.40744,
+          51.326278
+        ]
+      },
+      "properties": {
+        "spot_id": "613fb787e1a9a3e525c48ad5",
+        "name": "Westcliff Promenade",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.37285,
+          50.80675369833302
+        ]
+      },
+      "properties": {
+        "spot_id": "5a8f1e23b0f634001ada0b11",
+        "name": "Worthing",
+        "subregion": "Southern England East",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7329,
+          50.7292
+        ]
+      },
+      "properties": {
+        "spot_id": "613bc8e0c060e01a55d9ebd6",
+        "name": "Avon Beach",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6563,
+          50.733995
+        ]
+      },
+      "properties": {
+        "spot_id": "61c12d2dda2e0434ec5395c2",
+        "name": "Barton on Sea",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.835,
+          50.7175
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709cee",
+        "name": "Boscombe",
+        "subregion": "Southern England West",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.877,
+          50.713
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709cf4",
+        "name": "Bournemouth",
+        "subregion": "Southern England West",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4215,
+          50.6364
+        ]
+      },
+      "properties": {
+        "spot_id": "613ba295bf39c83c40ee3c6e",
+        "name": "Bowleaze Cove",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.90868,
+          50.705583
+        ]
+      },
+      "properties": {
+        "spot_id": "613bcbad5c02790ed0d5aedf",
+        "name": "Branksome Dene Chine",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8985,
+          50.732738
+        ]
+      },
+      "properties": {
+        "spot_id": "61c127d49cbe7110bcf41f42",
+        "name": "Charmouth",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5605,
+          50.6267
+        ]
+      },
+      "properties": {
+        "spot_id": "61395958f13494014ef4a178",
+        "name": "Chesil Beach",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7077,
+          50.690657
+        ]
+      },
+      "properties": {
+        "spot_id": "61c12a1324dd6c06a1a67e43",
+        "name": "Cogden",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.47861,
+          50.66272389356456
+        ]
+      },
+      "properties": {
+        "spot_id": "5ad50d3e8e6264001ab2d694",
+        "name": "Compton",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.279,
+          50.6216
+        ]
+      },
+      "properties": {
+        "spot_id": "613ba1cdfe976c52bf4cb5f1",
+        "name": "Durdle Door",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5122,
+          50.6681
+        ]
+      },
+      "properties": {
+        "spot_id": "613bd038d55308fca08054cf",
+        "name": "Freshwater",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7008,
+          50.7362
+        ]
+      },
+      "properties": {
+        "spot_id": "604a75d1d397152373ccb0d8",
+        "name": "Highcliffe",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.72018,
+          50.695067
+        ]
+      },
+      "properties": {
+        "spot_id": "61c1293f24dd6c2177a652d9",
+        "name": "Hive Beach",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6079,
+          50.7246
+        ]
+      },
+      "properties": {
+        "spot_id": "613bea0836d51135b86b38bf",
+        "name": "Hordle Cliff",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.133,
+          50.6111
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708e1f",
+        "name": "Kimmeridge Bay",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2469,
+          50.6183
+        ]
+      },
+      "properties": {
+        "spot_id": "613ba11d970cafe0f13833ea",
+        "name": "Lulworth Cove",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.93429,
+          50.72276418262871
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709d17",
+        "name": "Lyme Regis",
+        "subregion": "Southern England West",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5929,
+          50.7209
+        ]
+      },
+      "properties": {
+        "spot_id": "613ba68936d5112d6d6b38b3",
+        "name": "Milford on Sea",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7433,
+          50.726
+        ]
+      },
+      "properties": {
+        "spot_id": "613a73bdd66c4039f3633bcc",
+        "name": "Mudeford Harbour",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4412,
+          50.5829
+        ]
+      },
+      "properties": {
+        "spot_id": "613bcac9bf39c8220cee3c74",
+        "name": "Portland Harbour",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.35343,
+          50.631288
+        ]
+      },
+      "properties": {
+        "spot_id": "630d4437b0a14553709f34f2",
+        "name": "Ringstead Bay",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.93668,
+          50.688501
+        ]
+      },
+      "properties": {
+        "spot_id": "61c12bce3883916d0d0e850d",
+        "name": "Sandbanks Beach",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.167725347208716,
+          50.64025276838601
+        ]
+      },
+      "properties": {
+        "spot_id": "5ad50c41156dd5001a270d42",
+        "name": "Sandown",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.82394,
+          50.721901
+        ]
+      },
+      "properties": {
+        "spot_id": "61c1287eda2e04bb0d52a662",
+        "name": "Seatown",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8012,
+          50.7193
+        ]
+      },
+      "properties": {
+        "spot_id": "613950465f0d00288cf60f6b",
+        "name": "Southbourne",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9567,
+          50.6133
+        ]
+      },
+      "properties": {
+        "spot_id": "61395abb84ce2eb3d50066c8",
+        "name": "Swanage",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4584,
+          50.5118
+        ]
+      },
+      "properties": {
+        "spot_id": "613a74e21b7d1f6726589a77",
+        "name": "The Bill",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2080589650934144,
+          50.592799003679474
+        ]
+      },
+      "properties": {
+        "spot_id": "5ad532add6448d001c8bd51c",
+        "name": "Ventnor",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.76619,
+          50.71063
+        ]
+      },
+      "properties": {
+        "spot_id": "613bc998dab50d4dc21718ff",
+        "name": "West Bay",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.66563,
+          50.675153
+        ]
+      },
+      "properties": {
+        "spot_id": "61c12ac6903b350a9950b739",
+        "name": "West Bexington",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4523,
+          50.6112
+        ]
+      },
+      "properties": {
+        "spot_id": "613ba478f7cc210917c128d9",
+        "name": "Weymouth",
+        "subregion": "Southern England West",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7404,
+          54.0661
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc96e4f03d24f96cfff09",
+        "name": "Barrel Rock",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0592,
+          53.7946
+        ]
+      },
+      "properties": {
+        "spot_id": "613fcd6de22bc77f76ddc00d",
+        "name": "Blackpool South",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6311,
+          54.0755
+        ]
+      },
+      "properties": {
+        "spot_id": "6140d0e47ffe5b1859666ff1",
+        "name": "Castletown",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.27607,
+          54.1169681
+        ]
+      },
+      "properties": {
+        "spot_id": "640b9e334878eb632d1e7ad0",
+        "name": "Earnse Bay",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0116,
+          53.9293
+        ]
+      },
+      "properties": {
+        "spot_id": "6140d2acd097180ddd3bba21",
+        "name": "Fleetwood Beach",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7283,
+          54.0832
+        ]
+      },
+      "properties": {
+        "spot_id": "6140d15b998a2a7f5d19ad99",
+        "name": "Gansey",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6967,
+          54.0755
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc5cde77f9977e5b788dc",
+        "name": "Isle of Man",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.1643,
+          54.893
+        ]
+      },
+      "properties": {
+        "spot_id": "6140cf46f6a043abf7fdad9e",
+        "name": "Labrax",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.39203,
+          54.22422
+        ]
+      },
+      "properties": {
+        "spot_id": "6140d3a77e2c87c01c7cd84f",
+        "name": "Laxey Beach",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.09398,
+          53.4251255
+        ]
+      },
+      "properties": {
+        "spot_id": "640b9e2d4519051575e0c483",
+        "name": "Leasowe Bay",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.69532,
+          54.22475
+        ]
+      },
+      "properties": {
+        "spot_id": "6140d3351b36d74adc7ffc6d",
+        "name": "Peel Beach",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7601,
+          54.0862
+        ]
+      },
+      "properties": {
+        "spot_id": "6140d077cdf10f738a53340c",
+        "name": "Port Erin",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0408,
+          53.9246
+        ]
+      },
+      "properties": {
+        "spot_id": "6140d21bfe354c055f1abffa",
+        "name": "Rossall Point",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.731,
+          54.07
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc7c6c41c226cc2bdbb47",
+        "name": "S*** Pipe",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3514,
+          54.2167
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc71ee22bc76e93ddc007",
+        "name": "Silecroft",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6065,
+          54.4903
+        ]
+      },
+      "properties": {
+        "spot_id": "613fcbc2dbfb963cf4604068",
+        "name": "St Bees",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4136,
+          54.4069
+        ]
+      },
+      "properties": {
+        "spot_id": "6140cfe08c7d86d8f879b1ef",
+        "name": "The Ayre",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7348,
+          54.0669
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc89ddd5942f966d3dd8c",
+        "name": "The Edge",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7368,
+          54.0667
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc901edea396232f95172",
+        "name": "The Point",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7335,
+          54.0681
+        ]
+      },
+      "properties": {
+        "spot_id": "613fc83eba5f90c218099d1b",
+        "name": "drivers",
+        "subregion": "West Coast and Isle of Man",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.46468,
+          50.199586
+        ]
+      },
+      "properties": {
+        "spot_id": "61bd0a2ad7a7347c671c24f3",
+        "name": "Carbis Bay",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.23793,
+          50.30227930111261
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c1",
+        "name": "Chapel Porth",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.09649,
+          50.024247
+        ]
+      },
+      "properties": {
+        "spot_id": "61392b2e19d668119a27005c",
+        "name": "Coverack",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3946,
+          50.2304
+        ]
+      },
+      "properties": {
+        "spot_id": "584204214e65fad6a7709d2a",
+        "name": "Godrevy",
+        "subregion": "West Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.691,
+          50.09
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090bf",
+        "name": "Gwenver",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.39939,
+          50.224940120492306
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c95",
+        "name": "Gwithian",
+        "subregion": "West Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.4348,
+          50.2029
+        ]
+      },
+      "properties": {
+        "spot_id": "604b97ba2aecfaefc4e3085c",
+        "name": "Hayle Rivermouth",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.16268,
+          50.004207
+        ]
+      },
+      "properties": {
+        "spot_id": "61392a6ab1e9d2464de1cd6b",
+        "name": "Kennack Sands",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.4836,
+          50.1183
+        ]
+      },
+      "properties": {
+        "spot_id": "6042629f451c8835aa72b7f6",
+        "name": "Marazion",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.41624,
+          50.20875
+        ]
+      },
+      "properties": {
+        "spot_id": "61bd0cbfc76742be1f419517",
+        "name": "Mexico Towans",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.259,
+          50.014422
+        ]
+      },
+      "properties": {
+        "spot_id": "61392d046b2f9b9daf9c47e2",
+        "name": "Mullion Cove",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.52672,
+          50.12238
+        ]
+      },
+      "properties": {
+        "spot_id": "613927a4208c69f7fad50eeb",
+        "name": "Penzance",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.4425,
+          50.1107
+        ]
+      },
+      "properties": {
+        "spot_id": "613904450ff37119d27d029b",
+        "name": "Perranuthnoe",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.2652,
+          50.0332
+        ]
+      },
+      "properties": {
+        "spot_id": "6139244dcd0e0e1d3a25d045",
+        "name": "Poldhu Cove",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.64946,
+          50.042692
+        ]
+      },
+      "properties": {
+        "spot_id": "6139269e69981d4386cf134f",
+        "name": "Porthcurno",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.47538,
+          50.217324
+        ]
+      },
+      "properties": {
+        "spot_id": "61bd094c37bb4a7330aba226",
+        "name": "Porthgwidden Beach",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.44317,
+          50.198447
+        ]
+      },
+      "properties": {
+        "spot_id": "61bd0b08b0079a147f3caf60",
+        "name": "Porthkidney Beach",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.32111,
+          50.08194444
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c9b",
+        "name": "Porthleven",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.48326,
+          50.2166643894
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c96",
+        "name": "Porthmeor",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.06368,
+          50.055642
+        ]
+      },
+      "properties": {
+        "spot_id": "61392e286b2f9b4cda9c47e8",
+        "name": "Porthoustock",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.24643,
+          50.288859416902646
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c98",
+        "name": "Porthtowan",
+        "subregion": "West Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.294,
+          50.263
+        ]
+      },
+      "properties": {
+        "spot_id": "584204204e65fad6a77090c2",
+        "name": "Portreath",
+        "subregion": "West Cornwall",
+        "relivable_rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.38833,
+          50.10222222
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c9a",
+        "name": "Praa Sands",
+        "subregion": "West Cornwall",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.69518,
+          50.082260215669976
+        ]
+      },
+      "properties": {
+        "spot_id": "5842041f4e65fad6a7708c97",
+        "name": "Sennen",
+        "subregion": "West Cornwall",
+        "relivable_rating": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.334,
+          49.9738
+        ]
+      },
+      "properties": {
+        "spot_id": "61392f9a2ec3df0722c5d226",
+        "name": "Tresco",
+        "subregion": "West Cornwall",
+        "relivable_rating": 0
+      }
+    }
+  ]
+}

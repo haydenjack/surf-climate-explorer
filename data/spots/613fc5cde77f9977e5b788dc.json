@@ -1,0 +1,36 @@
+{
+  "id": "613fc5cde77f9977e5b788dc",
+  "name": "Isle of Man",
+  "lat": 54.0755,
+  "lon": -4.6967,
+  "subregion": "West Coast and Isle of Man",
+  "rating": 0.0,
+  "sea_level": {
+    "status": "ok",
+    "scenario": "RCP8.5 50th percentile",
+    "baseline": "1981-2000",
+    "unit": "cm",
+    "anomaly_cm": {
+      "2030": 11.2,
+      "2040": 16.2,
+      "2050": 22.0,
+      "2060": 28.7,
+      "2070": 36.3,
+      "2080": 44.5,
+      "2090": 53.2,
+      "2100": 62.4
+    },
+    "n_polygons": 2,
+    "buffer_m": 2000
+  },
+  "erosion": {
+    "climate_allowance": "Higher Central (70th pct, ~RCP8.5)",
+    "status": "unavailable",
+    "medium_term_with_smp": null,
+    "long_term_with_smp": null,
+    "medium_term_no_intervention": null,
+    "long_term_no_intervention": null,
+    "nearest_frontage_m": null,
+    "risk_level": "unknown"
+  }
+}

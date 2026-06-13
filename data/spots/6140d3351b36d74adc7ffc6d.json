@@ -1,0 +1,36 @@
+{
+  "id": "6140d3351b36d74adc7ffc6d",
+  "name": "Peel Beach",
+  "lat": 54.22475,
+  "lon": -4.69532,
+  "subregion": "West Coast and Isle of Man",
+  "rating": 0.0,
+  "sea_level": {
+    "status": "ok",
+    "scenario": "RCP8.5 50th percentile",
+    "baseline": "1981-2000",
+    "unit": "cm",
+    "anomaly_cm": {
+      "2030": 10.9,
+      "2040": 15.8,
+      "2050": 21.5,
+      "2060": 28.1,
+      "2070": 35.6,
+      "2080": 43.7,
+      "2090": 52.3,
+      "2100": 61.4
+    },
+    "n_polygons": 2,
+    "buffer_m": 2000
+  },
+  "erosion": {
+    "climate_allowance": "Higher Central (70th pct, ~RCP8.5)",
+    "status": "unavailable",
+    "medium_term_with_smp": null,
+    "long_term_with_smp": null,
+    "medium_term_no_intervention": null,
+    "long_term_no_intervention": null,
+    "nearest_frontage_m": null,
+    "risk_level": "unknown"
+  }
+}

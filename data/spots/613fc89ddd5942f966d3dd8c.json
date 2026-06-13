@@ -1,0 +1,36 @@
+{
+  "id": "613fc89ddd5942f966d3dd8c",
+  "name": "The Edge",
+  "lat": 54.0669,
+  "lon": -4.7348,
+  "subregion": "West Coast and Isle of Man",
+  "rating": 0.0,
+  "sea_level": {
+    "status": "ok",
+    "scenario": "RCP8.5 50th percentile",
+    "baseline": "1981-2000",
+    "unit": "cm",
+    "anomaly_cm": {
+      "2030": 11.2,
+      "2040": 16.1,
+      "2050": 22.0,
+      "2060": 28.6,
+      "2070": 36.2,
+      "2080": 44.4,
+      "2090": 53.1,
+      "2100": 62.3
+    },
+    "n_polygons": 1,
+    "buffer_m": 2000
+  },
+  "erosion": {
+    "climate_allowance": "Higher Central (70th pct, ~RCP8.5)",
+    "status": "unavailable",
+    "medium_term_with_smp": null,
+    "long_term_with_smp": null,
+    "medium_term_no_intervention": null,
+    "long_term_no_intervention": null,
+    "nearest_frontage_m": null,
+    "risk_level": "unknown"
+  }
+}

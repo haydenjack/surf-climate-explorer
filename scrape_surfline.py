@@ -46,6 +46,10 @@ BBOX = {"south": 49.5, "west": -6.5, "north": 55.9, "east": 2.0}
 MAPVIEW_URL = "https://services.surfline.com/kbyg/mapview"
 # Taxonomy id for the England *region* node (type=region, name=England).
 ENGLAND_TAXONOMY_ID = "5908d78edadb30820b3ba228"
+# Subregions to drop even though Surfline tags them as England: the Channel
+# Islands lie outside NCERM's England-only erosion mapping, so they'd never get
+# coastal-erosion data.
+EXCLUDE_SUBREGIONS = {"Channel Islands-England"}
 REQUEST_DELAY_S = 1.0  # politeness; only matters if the bbox is ever split
 HEADERS = {"User-Agent": "surf-climate-explorer/0.1 (personal research)"}
 
@@ -85,7 +89,10 @@ def main() -> None:
 
     spots = fetch_spots()
     english = [
-        s for s in spots if ENGLAND_TAXONOMY_ID in s.get("parentTaxonomy", [])
+        s
+        for s in spots
+        if ENGLAND_TAXONOMY_ID in s.get("parentTaxonomy", [])
+        and (s.get("subregion") or {}).get("name") not in EXCLUDE_SUBREGIONS
     ]
     records = [to_record(s) for s in english]
     if args.min_rating:

@@ -1,0 +1,2392 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-12T16:18:41+00:00",
+    "version": "V1-lazy",
+    "scope": "England \u2014 sea level rise + coastal erosion (sea temperature deferred)",
+    "sources": {
+      "sea_level": {
+        "name": "Met Office UKCP18 Time-mean Sea Level Projections to 2100",
+        "scenario": "RCP8.5, 50th percentile",
+        "baseline": "1981-2000",
+        "endpoint": "https://services.arcgis.com/Lq3V5RFuTBC9I7kv/arcgis/rest/services/Sea_Level_2010_2100/FeatureServer/1",
+        "licence": "Open Government Licence v3.0"
+      },
+      "erosion": {
+        "name": "National Coastal Erosion Risk Mapping (NCERM) 2024",
+        "publisher": "Environment Agency",
+        "climate_allowance": "70th pct (Higher Central, ~RCP8.5)",
+        "endpoint": "https://environment.data.gov.uk/spatialdata/ncern-national-2024/ogc/features/v1",
+        "licence": "Open Government Licence v3.0"
+      },
+      "surf_spots": {
+        "name": "Surfline mapview (public, undocumented) \u2014 England spots",
+        "endpoint": "https://services.surfline.com/kbyg/mapview"
+      }
+    },
+    "count": 236,
+    "processed": 236,
+    "total": 236
+  },
+  "spots": [
+    {
+      "id": "613282a64924a8bf64a65bea",
+      "name": "Bacton",
+      "lat": 52.8557,
+      "lon": 1.4771,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 81.1
+    },
+    {
+      "id": "584204214e65fad6a7709cf3",
+      "name": "Cromer Pier",
+      "lat": 52.933,
+      "lon": 1.303,
+      "subregion": "East Anglia",
+      "rating": 4.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.7
+    },
+    {
+      "id": "613147a930cae76d3b6f48bb",
+      "name": "Gorleston",
+      "lat": 52.56968,
+      "lon": 1.73653,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 81.0
+    },
+    {
+      "id": "613145d2f73fc6dc80aada92",
+      "name": "Great Yarmouth",
+      "lat": 52.603,
+      "lon": 1.7391,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 81.1
+    },
+    {
+      "id": "584204214e65fad6a7709cf5",
+      "name": "Lowestoft",
+      "lat": 52.466,
+      "lon": 1.749,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 81.0
+    },
+    {
+      "id": "613148d39046a0bb3048b046",
+      "name": "Mundesley",
+      "lat": 52.8789,
+      "lon": 1.439,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 81.0
+    },
+    {
+      "id": "584204214e65fad6a7709cf2",
+      "name": "Runton",
+      "lat": 52.936,
+      "lon": 1.289,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.7
+    },
+    {
+      "id": "61328b40b860000716d8a867",
+      "name": "Sea Palling",
+      "lat": 52.79,
+      "lon": 1.603,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 81.1
+    },
+    {
+      "id": "584204214e65fad6a7709cf6",
+      "name": "Southwold",
+      "lat": 52.334,
+      "lon": 1.693,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.8
+    },
+    {
+      "id": "584204204e65fad6a770909f",
+      "name": "Walcott",
+      "lat": 52.843,
+      "lon": 1.501,
+      "subregion": "East Anglia",
+      "rating": 3.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 81.1
+    },
+    {
+      "id": "613295f5735ce57adc5008ad",
+      "name": "Winterton-on-Sea",
+      "lat": 52.7173,
+      "lon": 1.6994,
+      "subregion": "East Anglia",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "5842041f4e65fad6a7708ca5",
+      "name": "Bude Crooklets",
+      "lat": 50.83565,
+      "lon": -4.55516,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "5a282eb11d8788001b7967a1",
+      "name": "Bude Summerleaze",
+      "lat": 50.8316,
+      "lon": -4.55437,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "584204204e65fad6a77090b3",
+      "name": "Constantine",
+      "lat": 50.535,
+      "lon": -5.03,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "584204204e65fad6a77090af",
+      "name": "Crackington Haven",
+      "lat": 50.743,
+      "lon": -4.641,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.2
+    },
+    {
+      "id": "584204204e65fad6a77090ba",
+      "name": "Crantock",
+      "lat": 50.408,
+      "lon": -5.127,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.3
+    },
+    {
+      "id": "584204204e65fad6a77090bd",
+      "name": "Cribbar",
+      "lat": 50.426,
+      "lon": -5.103,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.3
+    },
+    {
+      "id": "61bd0f16a9fdce2918d7929f",
+      "name": "Daymer Bay",
+      "lat": 50.559465,
+      "lon": -4.92883,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.7
+    },
+    {
+      "id": "61bd3a8086787d357dc2dee3",
+      "name": "Duckpool",
+      "lat": 50.875666,
+      "lon": -4.55863,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "584204214e65fad6a7709cef",
+      "name": "Great Western",
+      "lat": 50.418,
+      "lon": -5.079,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "584204204e65fad6a77090b2",
+      "name": "Harlyn",
+      "lat": 50.543,
+      "lon": -4.997,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.9
+    },
+    {
+      "id": "584204204e65fad6a77090be",
+      "name": "Holywell Bay",
+      "lat": 50.394,
+      "lon": -5.149,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.6
+    },
+    {
+      "id": "6139319ef1349483a6f4a13d",
+      "name": "Little Fistral",
+      "lat": 50.4229,
+      "lon": -5.1,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.3
+    },
+    {
+      "id": "584204204e65fad6a77090b9",
+      "name": "Lusty Glaze",
+      "lat": 50.42255985620887,
+      "lon": -5.06934,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "584204204e65fad6a77090b6",
+      "name": "Mawgan Porth",
+      "lat": 50.46925105120953,
+      "lon": -5.03871,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "584204214e65fad6a7709cec",
+      "name": "North Fistral Beach",
+      "lat": 50.41916667,
+      "lon": -5.09917,
+      "subregion": "North Cornwall",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.3
+    },
+    {
+      "id": "61bd38599946810bd0377f1e",
+      "name": "Northcott Mouth",
+      "lat": 50.847957,
+      "lon": -4.55562,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "584204204e65fad6a77090c0",
+      "name": "Perran Sands",
+      "lat": 50.367,
+      "lon": -5.155,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.6
+    },
+    {
+      "id": "5842041f4e65fad6a7708c94",
+      "name": "Perranporth",
+      "lat": 50.34833333,
+      "lon": -5.15889,
+      "subregion": "North Cornwall",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.6
+    },
+    {
+      "id": "584204204e65fad6a77090b1",
+      "name": "Polzeath",
+      "lat": 50.577,
+      "lon": -4.925,
+      "subregion": "North Cornwall",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.7
+    },
+    {
+      "id": "584204204e65fad6a77090b8",
+      "name": "Porth",
+      "lat": 50.42700276309305,
+      "lon": -5.06669282913208,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "61393250b91b2a581a31dac2",
+      "name": "Porthcothan Bay",
+      "lat": 50.5116,
+      "lon": -5.0314,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "61bd083337bb4a008eab6844",
+      "name": "Porthminster Beach",
+      "lat": 50.209365,
+      "lon": -5.47461,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "584204204e65fad6a77090aa",
+      "name": "Sandymouth",
+      "lat": 50.862,
+      "lon": -4.561,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "584204214e65fad6a7709ced",
+      "name": "South Fistral Beach",
+      "lat": 50.41464,
+      "lon": -5.10353,
+      "subregion": "North Cornwall",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.3
+    },
+    {
+      "id": "584204204e65fad6a77090bb",
+      "name": "Tolcarne",
+      "lat": 50.419,
+      "lon": -5.075,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "584204204e65fad6a77090bc",
+      "name": "Towan",
+      "lat": 50.417,
+      "lon": -5.084,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.4
+    },
+    {
+      "id": "584204204e65fad6a77090ae",
+      "name": "Trebarwith Strand",
+      "lat": 50.646,
+      "lon": -4.765,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.4
+    },
+    {
+      "id": "5842041f4e65fad6a7708c93",
+      "name": "Trevaunance Cove",
+      "lat": 50.32127176553899,
+      "lon": -5.20277738571167,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.6
+    },
+    {
+      "id": "584204204e65fad6a77090b0",
+      "name": "Trevone",
+      "lat": 50.547,
+      "lon": -4.981,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.9
+    },
+    {
+      "id": "584204204e65fad6a77090b5",
+      "name": "Treyarnon",
+      "lat": 50.528,
+      "lon": -5.029,
+      "subregion": "North Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "5842041f4e65fad6a7708ca6",
+      "name": "Watergate Bay",
+      "lat": 50.444688234298745,
+      "lon": -5.04622,
+      "subregion": "North Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "584204204e65fad6a77090ad",
+      "name": "Widemouth Bay",
+      "lat": 50.792,
+      "lon": -4.564,
+      "subregion": "North Cornwall",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "61394976ea00f8b5ca484b8e",
+      "name": "Bucks Mills",
+      "lat": 50.990242183844146,
+      "lon": -4.34417,
+      "subregion": "North Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 78.9
+    },
+    {
+      "id": "5d6ffa60c5015800018f660b",
+      "name": "Combe Martin",
+      "lat": 51.2084596927577,
+      "lon": -4.04218,
+      "subregion": "North Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 78.1
+    },
+    {
+      "id": "584204204e65fad6a77090ab",
+      "name": "Combesgate",
+      "lat": 51.1790739488,
+      "lon": -4.21430826187,
+      "subregion": "North Devon",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 78.5
+    },
+    {
+      "id": "5842041f4e65fad6a7708ca4",
+      "name": "Croyde",
+      "lat": 51.13027778,
+      "lon": -4.24083,
+      "subregion": "North Devon",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 78.5
+    },
+    {
+      "id": "61394f3afdfcd734116b531b",
+      "name": "Hele Bay",
+      "lat": 51.2115589552812,
+      "lon": -4.0971,
+      "subregion": "North Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 78.1
+    },
+    {
+      "id": "5842041f4e65fad6a7708ca2",
+      "name": "Lynmouth",
+      "lat": 51.23472222,
+      "lon": -3.82583,
+      "subregion": "North Devon",
+      "rating": 4.0,
+      "risk_level": "low",
+      "sea_level_2100": 78.1
+    },
+    {
+      "id": "6139485519d668f76927012c",
+      "name": "Minehead",
+      "lat": 51.207668,
+      "lon": -3.46335,
+      "subregion": "North Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 78.2
+    },
+    {
+      "id": "5842041f4e65fad6a7708ca1",
+      "name": "Putsborough",
+      "lat": 51.15111111,
+      "lon": -4.22333,
+      "subregion": "North Devon",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 78.5
+    },
+    {
+      "id": "5842041f4e65fad6a7708e10",
+      "name": "Saunton",
+      "lat": 51.1139223905,
+      "lon": -4.22952,
+      "subregion": "North Devon",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 78.7
+    },
+    {
+      "id": "584204204e65fad6a77090b4",
+      "name": "Westward Ho!",
+      "lat": 51.047,
+      "lon": -4.24,
+      "subregion": "North Devon",
+      "rating": 5.0,
+      "risk_level": "low",
+      "sea_level_2100": 78.9
+    },
+    {
+      "id": "584204204e65fad6a77090ac",
+      "name": "Woolacombe Bay",
+      "lat": 51.172,
+      "lon": -4.218,
+      "subregion": "North Devon",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 78.5
+    },
+    {
+      "id": "5842041f4e65fad6a7708c9e",
+      "name": "Alnmouth",
+      "lat": 55.38778,
+      "lon": -1.60458,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 64.0
+    },
+    {
+      "id": "5842041f4e65fad6a7708c9f",
+      "name": "Bamburgh",
+      "lat": 55.61044,
+      "lon": -1.69835,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 63.0
+    },
+    {
+      "id": "584204204e65fad6a770907c",
+      "name": "Beadnell Bay",
+      "lat": 55.53468,
+      "lon": -1.62838,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 63.5
+    },
+    {
+      "id": "584204204e65fad6a770907d",
+      "name": "Blyth Beach",
+      "lat": 55.11564,
+      "lon": -1.49549,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 66.0
+    },
+    {
+      "id": "5842041f4e65fad6a7708c9d",
+      "name": "Cayton Bay",
+      "lat": 54.24686,
+      "lon": -0.36208,
+      "subregion": "Northeast England",
+      "rating": 4.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 74.8
+    },
+    {
+      "id": "61325cedb6396238ebdfd8e6",
+      "name": "Cullercoats",
+      "lat": 55.03451,
+      "lon": -1.43054,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 66.3
+    },
+    {
+      "id": "5842041f4e65fad6a7708ca0",
+      "name": "Embleton Bay",
+      "lat": 55.49966,
+      "lon": -1.61205,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 63.5
+    },
+    {
+      "id": "613fc40978adcd21f8cb487a",
+      "name": "Filey",
+      "lat": 54.20751,
+      "lon": -0.28249,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 74.8
+    },
+    {
+      "id": "584204204e65fad6a7709086",
+      "name": "Hornsea",
+      "lat": 53.91339,
+      "lon": -0.15892,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 76.4
+    },
+    {
+      "id": "584204204e65fad6a7709084",
+      "name": "Longsands",
+      "lat": 55.02593,
+      "lon": -1.42299,
+      "subregion": "Northeast England",
+      "rating": 4.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 66.3
+    },
+    {
+      "id": "6130067deb3d9f2a79ea34b5",
+      "name": "Marske to Tees",
+      "lat": 54.62567,
+      "lon": -1.09237,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 70.0
+    },
+    {
+      "id": "584204204e65fad6a7709083",
+      "name": "Redcar",
+      "lat": 54.62373,
+      "lon": -1.08608,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 69.9
+    },
+    {
+      "id": "5842041f4e65fad6a7708c99",
+      "name": "Saltburn",
+      "lat": 54.58702,
+      "lon": -0.96739,
+      "subregion": "Northeast England",
+      "rating": 4.0,
+      "risk_level": "low",
+      "sea_level_2100": 70.6
+    },
+    {
+      "id": "5842041f4e65fad6a7708c9c",
+      "name": "Sandsend",
+      "lat": 54.49852,
+      "lon": -0.65568,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 72.6
+    },
+    {
+      "id": "584204204e65fad6a7709088",
+      "name": "Scarborough North Bay",
+      "lat": 54.29078,
+      "lon": -0.39845,
+      "subregion": "Northeast England",
+      "rating": 4.0,
+      "risk_level": "low",
+      "sea_level_2100": 74.2
+    },
+    {
+      "id": "584204204e65fad6a7709081",
+      "name": "Seaton Carew",
+      "lat": 54.65996,
+      "lon": -1.17997,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 69.6
+    },
+    {
+      "id": "65c36a8d7c0c29a1bd7fd850",
+      "name": "Seaton Sluice",
+      "lat": 55.08851,
+      "lon": -1.47652,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 66.3
+    },
+    {
+      "id": "613fc35806a1e5c60e2db693",
+      "name": "Skegness",
+      "lat": 53.14648,
+      "lon": 0.34974,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.0
+    },
+    {
+      "id": "584204204e65fad6a7709087",
+      "name": "South Bay",
+      "lat": 54.27809,
+      "lon": -0.39339,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 74.8
+    },
+    {
+      "id": "584204204e65fad6a7709082",
+      "name": "South Shields",
+      "lat": 54.99884,
+      "lon": -1.40708,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 66.3
+    },
+    {
+      "id": "61313ad0f7158a61d3f8e789",
+      "name": "Steetley Beach",
+      "lat": 54.71074,
+      "lon": -1.20768,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 69.6
+    },
+    {
+      "id": "604a7a8c3a388458aba839b3",
+      "name": "Sunderland",
+      "lat": 54.91205,
+      "lon": -1.35447,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 67.6
+    },
+    {
+      "id": "613fc2c678adcdc5e5cb4874",
+      "name": "Sutton on Sea",
+      "lat": 53.32037,
+      "lon": 0.28329,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 78.4
+    },
+    {
+      "id": "6131408465ca88852ab5f08f",
+      "name": "The Gare",
+      "lat": 54.63753,
+      "lon": -1.12874,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 69.9
+    },
+    {
+      "id": "584204204e65fad6a7709085",
+      "name": "Whitby Beach",
+      "lat": 54.49257,
+      "lon": -0.61862,
+      "subregion": "Northeast England",
+      "rating": 4.0,
+      "risk_level": "low",
+      "sea_level_2100": 72.6
+    },
+    {
+      "id": "584204204e65fad6a770907f",
+      "name": "Whitley Bay",
+      "lat": 55.04878,
+      "lon": -1.44394,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 66.3
+    },
+    {
+      "id": "613fc07caf6396009292a8a1",
+      "name": "Withernsea",
+      "lat": 53.73178,
+      "lon": 0.03605,
+      "subregion": "Northeast England",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 77.4
+    },
+    {
+      "id": "640b9e21e920302787e1e81f",
+      "name": "Carlyon Beach",
+      "lat": 50.336261,
+      "lon": -4.73221,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.7
+    },
+    {
+      "id": "61c11ea39cbe719094f23bcf",
+      "name": "Downderry",
+      "lat": 50.360509,
+      "lon": -4.3698,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.5
+    },
+    {
+      "id": "584204204e65fad6a77090c4",
+      "name": "Falmouth",
+      "lat": 50.14389,
+      "lon": -5.06674,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 82.3
+    },
+    {
+      "id": "640b9e15e92030503ee1e519",
+      "name": "Looe",
+      "lat": 50.351914,
+      "lon": -4.45117,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 81.6
+    },
+    {
+      "id": "613920f8ef899138b1d66c81",
+      "name": "Maenporth Beach",
+      "lat": 50.1253,
+      "lon": -5.0893,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.5
+    },
+    {
+      "id": "61c11d00903b3545e94dd9cc",
+      "name": "Millendreath",
+      "lat": 50.36089,
+      "lon": -4.43589,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.6
+    },
+    {
+      "id": "61c11ab1903b35ad994d54b1",
+      "name": "Par Sands",
+      "lat": 50.3468,
+      "lon": -4.69656,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.7
+    },
+    {
+      "id": "61390740e3a39f95b5bc1f2d",
+      "name": "Pendower Beach",
+      "lat": 50.2042,
+      "lon": -4.9455,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.1
+    },
+    {
+      "id": "604b95b0219e49fe952ac4c0",
+      "name": "Pentewan",
+      "lat": 50.2888,
+      "lon": -4.7799,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.7
+    },
+    {
+      "id": "61c11bbfda2e0467414ffb2e",
+      "name": "Polkerris",
+      "lat": 50.338237,
+      "lon": -4.68205,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 81.7
+    },
+    {
+      "id": "640b9e1bde81d54f6c0e6615",
+      "name": "Porthpean",
+      "lat": 50.323082,
+      "lon": -4.76521,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.7
+    },
+    {
+      "id": "61c11fc624dd6ce08fa45f57",
+      "name": "Portwrinkle",
+      "lat": 50.361677,
+      "lon": -4.31594,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.5
+    },
+    {
+      "id": "605e6cf85b5f7230986891c5",
+      "name": "Seaton Beach",
+      "lat": 50.363894,
+      "lon": -4.38598,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 81.5
+    },
+    {
+      "id": "584204204e65fad6a77090c3",
+      "name": "Swanpool",
+      "lat": 50.14,
+      "lon": -5.076,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.3
+    },
+    {
+      "id": "61c120d7903b35ccbc4eaa5c",
+      "name": "Tregantle",
+      "lat": 50.352826,
+      "lon": -4.27163,
+      "subregion": "South Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.5
+    },
+    {
+      "id": "584204204e65fad6a77090c5",
+      "name": "Whitsand Bay",
+      "lat": 50.352,
+      "lon": -4.278,
+      "subregion": "South Cornwall",
+      "rating": 3.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.5
+    },
+    {
+      "id": "584204204e65fad6a77090c9",
+      "name": "Bantham",
+      "lat": 50.27897,
+      "lon": -3.88536,
+      "subregion": "South Devon",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "613b99af6a25625a8eccc524",
+      "name": "Beer Point",
+      "lat": 50.6848,
+      "lon": -3.0951,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.1
+    },
+    {
+      "id": "604bc5c5ab677d2dddb8cb82",
+      "name": "Bigbury",
+      "lat": 50.2805,
+      "lon": -3.8934,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "6139290ff187b87bdd8d8074",
+      "name": "Blackpool Sands",
+      "lat": 50.31830690138395,
+      "lon": -3.61025,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.1
+    },
+    {
+      "id": "613ba013f9041d2943321fe6",
+      "name": "Branscombe Beach",
+      "lat": 50.6873,
+      "lon": -3.1294,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.1
+    },
+    {
+      "id": "61c1241061c69f2be0a7568d",
+      "name": "Broadsands",
+      "lat": 50.407128,
+      "lon": -3.55448,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.6
+    },
+    {
+      "id": "613b9e00dab50d01061718d3",
+      "name": "Budleigh Salterton",
+      "lat": 50.6278,
+      "lon": -3.3195,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.2
+    },
+    {
+      "id": "584204204e65fad6a77090c7",
+      "name": "Challaborough",
+      "lat": 50.28467778071562,
+      "lon": -3.90062,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "613b9b4e915e7b0e471825de",
+      "name": "Dawlish",
+      "lat": 50.5752,
+      "lon": -3.4675,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.2
+    },
+    {
+      "id": "61c1262261c69f7f53a7c37b",
+      "name": "Dawlish Warren",
+      "lat": 50.599833,
+      "lon": -3.43721,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.2
+    },
+    {
+      "id": "604b949c3a2c552aed3b0fdd",
+      "name": "Exmouth",
+      "lat": 50.61,
+      "lon": -3.41,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.2
+    },
+    {
+      "id": "6138ff9e4b5b40a9c0f38074",
+      "name": "Goodrington Sands",
+      "lat": 50.4239,
+      "lon": -3.5586,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.6
+    },
+    {
+      "id": "61c6152018c0463275406e95",
+      "name": "Hope Cove",
+      "lat": 50.246652,
+      "lon": -3.85926,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "61c121aa903b3509bf4eda0b",
+      "name": "Mothecombe",
+      "lat": 50.30931,
+      "lon": -3.95266,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "604b906f909f8fb8d1e1a768",
+      "name": "Paignton",
+      "lat": 50.438,
+      "lon": -3.558,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.6
+    },
+    {
+      "id": "613902c0065181634b2d7bae",
+      "name": "Preston Beach",
+      "lat": 50.4425,
+      "lon": -3.5547,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.6
+    },
+    {
+      "id": "61c126f661c69fc905a7ef60",
+      "name": "Sandy Bay",
+      "lat": 50.609133,
+      "lon": -3.36664,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.2
+    },
+    {
+      "id": "613ba08d0a40ef2200b1ca09",
+      "name": "Seaton",
+      "lat": 50.7027,
+      "lon": -3.0694,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.0
+    },
+    {
+      "id": "604a7f34c8c32d683355303b",
+      "name": "Sidmouth",
+      "lat": 50.6756,
+      "lon": -3.2368,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.2
+    },
+    {
+      "id": "6138fe50253aa7e580d8997b",
+      "name": "Slapton Sands",
+      "lat": 50.286,
+      "lon": -3.6445,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.1
+    },
+    {
+      "id": "604f78b169b0fc122a53c33a",
+      "name": "Teignmouth",
+      "lat": 50.55,
+      "lon": -3.49,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.3
+    },
+    {
+      "id": "61c122dbda2e04967d517eaa",
+      "name": "Thurlestone",
+      "lat": 50.26406,
+      "lon": -3.86214,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.2
+    },
+    {
+      "id": "640b9e27606c4563f2f4b26a",
+      "name": "Torbay",
+      "lat": 50.4289,
+      "lon": -3.4812,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 80.6
+    },
+    {
+      "id": "584204204e65fad6a77090c6",
+      "name": "Wembury",
+      "lat": 50.315,
+      "lon": -4.086,
+      "subregion": "South Devon",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.3
+    },
+    {
+      "id": "613fb969b02b23d3d70ecd2d",
+      "name": "Bexhill-on-Sea",
+      "lat": 50.83651370492595,
+      "lon": 0.47253,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "613bcd30aef7046f44c02f20",
+      "name": "Birling Gap",
+      "lat": 50.74,
+      "lon": 0.2,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "61c12f6b903b3557ce519d5a",
+      "name": "Bognor Regis",
+      "lat": 50.781302,
+      "lon": -0.67452,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "584204204e65fad6a77090a1",
+      "name": "Bracklesham Bay",
+      "lat": 50.76,
+      "lon": -0.86,
+      "subregion": "Southern England East",
+      "rating": 4.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "61ba7029a052dac52a845758",
+      "name": "Brighton",
+      "lat": 50.81819,
+      "lon": -0.13922,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "604bc4e9909f8fae5be1a78f",
+      "name": "Brighton Marina",
+      "lat": 50.8114,
+      "lon": -0.0923,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "5b0d97856f349c001a3b7cab",
+      "name": "Brighton West Pier",
+      "lat": 50.819304496632945,
+      "lon": -0.1455,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "613be5026fd17c26d1f9f69c",
+      "name": "Calshot",
+      "lat": 50.8078,
+      "lon": -1.3197,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "604bca4106f62cd01d31481e",
+      "name": "Camber Sands",
+      "lat": 50.9331,
+      "lon": 0.796,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.3
+    },
+    {
+      "id": "613bd4d3e2cf5db6fdece9c5",
+      "name": "Dungeness",
+      "lat": 50.9126,
+      "lon": 0.9747,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.3
+    },
+    {
+      "id": "584204204e65fad6a770909d",
+      "name": "East Wittering",
+      "lat": 50.765,
+      "lon": -0.876,
+      "subregion": "Southern England East",
+      "rating": 4.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "613bcf8be27454d2b96e67ae",
+      "name": "Eastbourne",
+      "lat": 50.7639,
+      "lon": 0.291,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "613bd55ce2cf5d0c46ece9cb",
+      "name": "Fairlight",
+      "lat": 50.8753,
+      "lon": 0.6716,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "604bc812c27c3c577be08ac4",
+      "name": "Folkestone",
+      "lat": 51.0814,
+      "lon": 1.1913,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "613bd276f465600f6b7edb5d",
+      "name": "Hastings",
+      "lat": 50.8527,
+      "lon": 0.5755,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "604bc67d6bec13ed6e0cf33b",
+      "name": "Hayling Island",
+      "lat": 50.7798,
+      "lon": -0.9803,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "613bd4131e5772d9940e6dfa",
+      "name": "Herne Bay",
+      "lat": 51.3723,
+      "lon": 1.1371,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "613be4741cd8ffb0726a817f",
+      "name": "Hill Head",
+      "lat": 50.8163,
+      "lon": -1.2345,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "601896c5797ce97445fac470",
+      "name": "Hot Pipe",
+      "lat": 50.8275,
+      "lon": -0.2284,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "61ba6e871679e26eb942f058",
+      "name": "Hove",
+      "lat": 50.823182,
+      "lon": -0.17039,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "584204204e65fad6a7709093",
+      "name": "Joss Bay",
+      "lat": 51.38,
+      "lon": 1.449,
+      "subregion": "Southern England East",
+      "rating": 3.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "613be8cc970caf2d3338345f",
+      "name": "Keyhaven",
+      "lat": 50.7198,
+      "lon": -1.5527,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "613bd608196d8505f9f1896c",
+      "name": "Lancing Beach",
+      "lat": 50.8189,
+      "lon": -0.3238,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "613bd0e736d511e73e6b38b9",
+      "name": "Littlehampton",
+      "lat": 50.8018,
+      "lon": -0.5331,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "613fb82de775ff4144eae4e3",
+      "name": "Main Sands",
+      "lat": 51.388889,
+      "lon": 1.37689,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "613fbed1dd594237a8d3dd86",
+      "name": "Newhaven",
+      "lat": 50.77938,
+      "lon": 0.04381,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "613fbfa15ca3bc1680db3452",
+      "name": "Pevensey Bay",
+      "lat": 50.81111,
+      "lon": 0.35314,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "613fba06c6300f068257306d",
+      "name": "Ramsgate Main Beach",
+      "lat": 51.331661,
+      "lon": 1.42537,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "60df8c1353e32275590dc891",
+      "name": "Sandwich Bay",
+      "lat": 51.28918484588586,
+      "lon": 1.38143,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "61c12ed861c69fe59fa9825d",
+      "name": "Selsey Beach",
+      "lat": 50.724605,
+      "lon": -0.79654,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "613bce46e080751d2530bc17",
+      "name": "Southend on Sea",
+      "lat": 51.5299,
+      "lon": 0.7457,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "613be7278a064be58b2b92bf",
+      "name": "Southsea",
+      "lat": 50.7788,
+      "lon": -1.0728,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "613bcecb3d7c4a043b49527e",
+      "name": "Tidemills",
+      "lat": 50.78095,
+      "lon": 0.06697,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.4
+    },
+    {
+      "id": "613bd1831e577244cd0e6dee",
+      "name": "Viking Bay",
+      "lat": 51.3581,
+      "lon": 1.4458,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "613bd33b1e5772d2330e6df4",
+      "name": "Walton-on-the-Naze",
+      "lat": 51.8481,
+      "lon": 1.2803,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 80.0
+    },
+    {
+      "id": "604b93727e36356e3c8d9822",
+      "name": "West Wittering",
+      "lat": 50.7739,
+      "lon": -0.9084,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "613fb787e1a9a3e525c48ad5",
+      "name": "Westcliff Promenade",
+      "lat": 51.326278,
+      "lon": 1.40744,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "5a8f1e23b0f634001ada0b11",
+      "name": "Worthing",
+      "lat": 50.80675369833302,
+      "lon": -0.37285,
+      "subregion": "Southern England East",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.5
+    },
+    {
+      "id": "613bc8e0c060e01a55d9ebd6",
+      "name": "Avon Beach",
+      "lat": 50.7292,
+      "lon": -1.7329,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "61c12d2dda2e0434ec5395c2",
+      "name": "Barton on Sea",
+      "lat": 50.733995,
+      "lon": -1.6563,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "584204214e65fad6a7709cee",
+      "name": "Boscombe",
+      "lat": 50.7175,
+      "lon": -1.835,
+      "subregion": "Southern England West",
+      "rating": 4.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "584204214e65fad6a7709cf4",
+      "name": "Bournemouth",
+      "lat": 50.713,
+      "lon": -1.877,
+      "subregion": "Southern England West",
+      "rating": 5.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "613ba295bf39c83c40ee3c6e",
+      "name": "Bowleaze Cove",
+      "lat": 50.6364,
+      "lon": -2.4215,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.9
+    },
+    {
+      "id": "613bcbad5c02790ed0d5aedf",
+      "name": "Branksome Dene Chine",
+      "lat": 50.705583,
+      "lon": -1.90868,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "61c127d49cbe7110bcf41f42",
+      "name": "Charmouth",
+      "lat": 50.732738,
+      "lon": -2.8985,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "61395958f13494014ef4a178",
+      "name": "Chesil Beach",
+      "lat": 50.6267,
+      "lon": -2.5605,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.0
+    },
+    {
+      "id": "61c12a1324dd6c06a1a67e43",
+      "name": "Cogden",
+      "lat": 50.690657,
+      "lon": -2.7077,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.0
+    },
+    {
+      "id": "5ad50d3e8e6264001ab2d694",
+      "name": "Compton",
+      "lat": 50.66272389356456,
+      "lon": -1.47861,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "613ba1cdfe976c52bf4cb5f1",
+      "name": "Durdle Door",
+      "lat": 50.6216,
+      "lon": -2.279,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.9
+    },
+    {
+      "id": "613bd038d55308fca08054cf",
+      "name": "Freshwater",
+      "lat": 50.6681,
+      "lon": -1.5122,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "604a75d1d397152373ccb0d8",
+      "name": "Highcliffe",
+      "lat": 50.7362,
+      "lon": -1.7008,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "61c1293f24dd6c2177a652d9",
+      "name": "Hive Beach",
+      "lat": 50.695067,
+      "lon": -2.72018,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.0
+    },
+    {
+      "id": "613bea0836d51135b86b38bf",
+      "name": "Hordle Cliff",
+      "lat": 50.7246,
+      "lon": -1.6079,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "5842041f4e65fad6a7708e1f",
+      "name": "Kimmeridge Bay",
+      "lat": 50.6111,
+      "lon": -2.133,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.9
+    },
+    {
+      "id": "613ba11d970cafe0f13833ea",
+      "name": "Lulworth Cove",
+      "lat": 50.6183,
+      "lon": -2.2469,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.9
+    },
+    {
+      "id": "584204214e65fad6a7709d17",
+      "name": "Lyme Regis",
+      "lat": 50.72276418262871,
+      "lon": -2.93429,
+      "subregion": "Southern England West",
+      "rating": 5.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "613ba68936d5112d6d6b38b3",
+      "name": "Milford on Sea",
+      "lat": 50.7209,
+      "lon": -1.5929,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "613a73bdd66c4039f3633bcc",
+      "name": "Mudeford Harbour",
+      "lat": 50.726,
+      "lon": -1.7433,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "613bcac9bf39c8220cee3c74",
+      "name": "Portland Harbour",
+      "lat": 50.5829,
+      "lon": -2.4412,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.9
+    },
+    {
+      "id": "630d4437b0a14553709f34f2",
+      "name": "Ringstead Bay",
+      "lat": 50.631288,
+      "lon": -2.35343,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.9
+    },
+    {
+      "id": "61c12bce3883916d0d0e850d",
+      "name": "Sandbanks Beach",
+      "lat": 50.688501,
+      "lon": -1.93668,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "5ad50c41156dd5001a270d42",
+      "name": "Sandown",
+      "lat": 50.64025276838601,
+      "lon": -1.167725347208716,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.7
+    },
+    {
+      "id": "61c1287eda2e04bb0d52a662",
+      "name": "Seatown",
+      "lat": 50.721901,
+      "lon": -2.82394,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "613950465f0d00288cf60f6b",
+      "name": "Southbourne",
+      "lat": 50.7193,
+      "lon": -1.8012,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.6
+    },
+    {
+      "id": "61395abb84ce2eb3d50066c8",
+      "name": "Swanage",
+      "lat": 50.6133,
+      "lon": -1.9567,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "613a74e21b7d1f6726589a77",
+      "name": "The Bill",
+      "lat": 50.5118,
+      "lon": -2.4584,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.0
+    },
+    {
+      "id": "5ad532add6448d001c8bd51c",
+      "name": "Ventnor",
+      "lat": 50.592799003679474,
+      "lon": -1.2080589650934144,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.8
+    },
+    {
+      "id": "613bc998dab50d4dc21718ff",
+      "name": "West Bay",
+      "lat": 50.71063,
+      "lon": -2.76619,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.9
+    },
+    {
+      "id": "61c12ac6903b350a9950b739",
+      "name": "West Bexington",
+      "lat": 50.675153,
+      "lon": -2.66563,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 80.0
+    },
+    {
+      "id": "613ba478f7cc210917c128d9",
+      "name": "Weymouth",
+      "lat": 50.6112,
+      "lon": -2.4523,
+      "subregion": "Southern England West",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 79.9
+    },
+    {
+      "id": "613fc96e4f03d24f96cfff09",
+      "name": "Barrel Rock",
+      "lat": 54.0661,
+      "lon": -4.7404,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.3
+    },
+    {
+      "id": "613fcd6de22bc77f76ddc00d",
+      "name": "Blackpool South",
+      "lat": 53.7946,
+      "lon": -3.0592,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 67.1
+    },
+    {
+      "id": "6140d0e47ffe5b1859666ff1",
+      "name": "Castletown",
+      "lat": 54.0755,
+      "lon": -4.6311,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.5
+    },
+    {
+      "id": "640b9e334878eb632d1e7ad0",
+      "name": "Earnse Bay",
+      "lat": 54.1169681,
+      "lon": -3.27607,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 64.4
+    },
+    {
+      "id": "6140d2acd097180ddd3bba21",
+      "name": "Fleetwood Beach",
+      "lat": 53.9293,
+      "lon": -3.0116,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 66.4
+    },
+    {
+      "id": "6140d15b998a2a7f5d19ad99",
+      "name": "Gansey",
+      "lat": 54.0832,
+      "lon": -4.7283,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.3
+    },
+    {
+      "id": "613fc5cde77f9977e5b788dc",
+      "name": "Isle of Man",
+      "lat": 54.0755,
+      "lon": -4.6967,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.4
+    },
+    {
+      "id": "6140cf46f6a043abf7fdad9e",
+      "name": "Labrax",
+      "lat": 54.893,
+      "lon": -5.1643,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 57.9
+    },
+    {
+      "id": "6140d3a77e2c87c01c7cd84f",
+      "name": "Laxey Beach",
+      "lat": 54.22422,
+      "lon": -4.39203,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.1
+    },
+    {
+      "id": "640b9e2d4519051575e0c483",
+      "name": "Leasowe Bay",
+      "lat": 53.4251255,
+      "lon": -3.09398,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 68.6
+    },
+    {
+      "id": "6140d3351b36d74adc7ffc6d",
+      "name": "Peel Beach",
+      "lat": 54.22475,
+      "lon": -4.69532,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 61.4
+    },
+    {
+      "id": "6140d077cdf10f738a53340c",
+      "name": "Port Erin",
+      "lat": 54.0862,
+      "lon": -4.7601,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.3
+    },
+    {
+      "id": "6140d21bfe354c055f1abffa",
+      "name": "Rossall Point",
+      "lat": 53.9246,
+      "lon": -3.0408,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 66.1
+    },
+    {
+      "id": "613fc7c6c41c226cc2bdbb47",
+      "name": "S*** Pipe",
+      "lat": 54.07,
+      "lon": -4.731,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.3
+    },
+    {
+      "id": "613fc71ee22bc76e93ddc007",
+      "name": "Silecroft",
+      "lat": 54.2167,
+      "lon": -3.3514,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 63.9
+    },
+    {
+      "id": "613fcbc2dbfb963cf4604068",
+      "name": "St Bees",
+      "lat": 54.4903,
+      "lon": -3.6065,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "moderate",
+      "sea_level_2100": 61.8
+    },
+    {
+      "id": "6140cfe08c7d86d8f879b1ef",
+      "name": "The Ayre",
+      "lat": 54.4069,
+      "lon": -4.4136,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 60.6
+    },
+    {
+      "id": "613fc89ddd5942f966d3dd8c",
+      "name": "The Edge",
+      "lat": 54.0669,
+      "lon": -4.7348,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.3
+    },
+    {
+      "id": "613fc901edea396232f95172",
+      "name": "The Point",
+      "lat": 54.0667,
+      "lon": -4.7368,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.3
+    },
+    {
+      "id": "613fc83eba5f90c218099d1b",
+      "name": "drivers",
+      "lat": 54.0681,
+      "lon": -4.7335,
+      "subregion": "West Coast and Isle of Man",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 62.3
+    },
+    {
+      "id": "61bd0a2ad7a7347c671c24f3",
+      "name": "Carbis Bay",
+      "lat": 50.199586,
+      "lon": -5.46468,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "584204204e65fad6a77090c1",
+      "name": "Chapel Porth",
+      "lat": 50.30227930111261,
+      "lon": -5.23793,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.6
+    },
+    {
+      "id": "61392b2e19d668119a27005c",
+      "name": "Coverack",
+      "lat": 50.024247,
+      "lon": -5.09649,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 82.5
+    },
+    {
+      "id": "584204214e65fad6a7709d2a",
+      "name": "Godrevy",
+      "lat": 50.2304,
+      "lon": -5.3946,
+      "subregion": "West Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "584204204e65fad6a77090bf",
+      "name": "Gwenver",
+      "lat": 50.09,
+      "lon": -5.691,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.8
+    },
+    {
+      "id": "5842041f4e65fad6a7708c95",
+      "name": "Gwithian",
+      "lat": 50.224940120492306,
+      "lon": -5.39939,
+      "subregion": "West Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "604b97ba2aecfaefc4e3085c",
+      "name": "Hayle Rivermouth",
+      "lat": 50.2029,
+      "lon": -5.4348,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "61392a6ab1e9d2464de1cd6b",
+      "name": "Kennack Sands",
+      "lat": 50.004207,
+      "lon": -5.16268,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.7
+    },
+    {
+      "id": "6042629f451c8835aa72b7f6",
+      "name": "Marazion",
+      "lat": 50.1183,
+      "lon": -5.4836,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.7
+    },
+    {
+      "id": "61bd0cbfc76742be1f419517",
+      "name": "Mexico Towans",
+      "lat": 50.20875,
+      "lon": -5.41624,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "61392d046b2f9b9daf9c47e2",
+      "name": "Mullion Cove",
+      "lat": 50.014422,
+      "lon": -5.259,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.9
+    },
+    {
+      "id": "613927a4208c69f7fad50eeb",
+      "name": "Penzance",
+      "lat": 50.12238,
+      "lon": -5.52672,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 82.7
+    },
+    {
+      "id": "613904450ff37119d27d029b",
+      "name": "Perranuthnoe",
+      "lat": 50.1107,
+      "lon": -5.4425,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.7
+    },
+    {
+      "id": "6139244dcd0e0e1d3a25d045",
+      "name": "Poldhu Cove",
+      "lat": 50.0332,
+      "lon": -5.2652,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.8
+    },
+    {
+      "id": "6139269e69981d4386cf134f",
+      "name": "Porthcurno",
+      "lat": 50.042692,
+      "lon": -5.64946,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.8
+    },
+    {
+      "id": "61bd094c37bb4a7330aba226",
+      "name": "Porthgwidden Beach",
+      "lat": 50.217324,
+      "lon": -5.47538,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "61bd0b08b0079a147f3caf60",
+      "name": "Porthkidney Beach",
+      "lat": 50.198447,
+      "lon": -5.44317,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "5842041f4e65fad6a7708c9b",
+      "name": "Porthleven",
+      "lat": 50.08194444,
+      "lon": -5.32111,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.7
+    },
+    {
+      "id": "5842041f4e65fad6a7708c96",
+      "name": "Porthmeor",
+      "lat": 50.2166643894,
+      "lon": -5.48326,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "low",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "61392e286b2f9b4cda9c47e8",
+      "name": "Porthoustock",
+      "lat": 50.055642,
+      "lon": -5.06368,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.5
+    },
+    {
+      "id": "5842041f4e65fad6a7708c98",
+      "name": "Porthtowan",
+      "lat": 50.288859416902646,
+      "lon": -5.24643,
+      "subregion": "West Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 81.6
+    },
+    {
+      "id": "584204204e65fad6a77090c2",
+      "name": "Portreath",
+      "lat": 50.263,
+      "lon": -5.294,
+      "subregion": "West Cornwall",
+      "rating": 4.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.0
+    },
+    {
+      "id": "5842041f4e65fad6a7708c9a",
+      "name": "Praa Sands",
+      "lat": 50.10222222,
+      "lon": -5.38833,
+      "subregion": "West Cornwall",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.7
+    },
+    {
+      "id": "5842041f4e65fad6a7708c97",
+      "name": "Sennen",
+      "lat": 50.082260215669976,
+      "lon": -5.69518,
+      "subregion": "West Cornwall",
+      "rating": 5.0,
+      "risk_level": "high",
+      "sea_level_2100": 82.8
+    },
+    {
+      "id": "61392f9a2ec3df0722c5d226",
+      "name": "Tresco",
+      "lat": 49.9738,
+      "lon": -6.334,
+      "subregion": "West Cornwall",
+      "rating": 0.0,
+      "risk_level": "unknown",
+      "sea_level_2100": 83.3
+    }
+  ]
+}
