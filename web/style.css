@@ -262,6 +262,7 @@
      letter-spacing: 0.4px;
    }
    .unavailable { color: var(--muted); font-style: italic; }
+.loading { color: var(--muted); font-style: italic; padding: 8px 0; }
    
    /* Sea level sparkline chart */
    .chart { width: 100%; height: 130px; margin-top: 8px; }

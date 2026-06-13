@@ -1,0 +1,36 @@
+{
+  "id": "613be8cc970caf2d3338345f",
+  "name": "Keyhaven",
+  "lat": 50.7198,
+  "lon": -1.5527,
+  "subregion": "Southern England East",
+  "rating": 0.0,
+  "sea_level": {
+    "status": "ok",
+    "scenario": "RCP8.5 50th percentile",
+    "baseline": "1981-2000",
+    "unit": "cm",
+    "anomaly_cm": {
+      "2030": 16.5,
+      "2040": 22.9,
+      "2050": 30.3,
+      "2060": 38.5,
+      "2070": 47.8,
+      "2080": 57.8,
+      "2090": 68.4,
+      "2100": 79.6
+    },
+    "n_polygons": 1,
+    "buffer_m": 2000
+  },
+  "erosion": {
+    "climate_allowance": "Higher Central (70th pct, ~RCP8.5)",
+    "status": "no_nearby_frontage",
+    "medium_term_with_smp": null,
+    "long_term_with_smp": null,
+    "medium_term_no_intervention": null,
+    "long_term_no_intervention": null,
+    "nearest_frontage_m": 2111,
+    "risk_level": "unknown"
+  }
+}

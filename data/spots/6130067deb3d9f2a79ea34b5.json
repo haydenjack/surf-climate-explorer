@@ -1,0 +1,198 @@
+{
+  "id": "6130067deb3d9f2a79ea34b5",
+  "name": "Marske to Tees",
+  "lat": 54.62567,
+  "lon": -1.09237,
+  "subregion": "Northeast England",
+  "rating": 0.0,
+  "sea_level": {
+    "status": "ok",
+    "scenario": "RCP8.5 50th percentile",
+    "baseline": "1981-2000",
+    "unit": "cm",
+    "anomaly_cm": {
+      "2030": 13.8,
+      "2040": 19.5,
+      "2050": 26.0,
+      "2060": 33.4,
+      "2070": 41.7,
+      "2080": 50.6,
+      "2090": 60.0,
+      "2100": 70.0
+    },
+    "n_polygons": 3,
+    "buffer_m": 6000
+  },
+  "erosion": {
+    "climate_allowance": "Higher Central (70th pct, ~RCP8.5)",
+    "status": "ok",
+    "medium_term_with_smp": {
+      "policy": "Hold The Line",
+      "interpretation": "Erosion restricted",
+      "band": 0,
+      "zone": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -1.0781,
+                54.6204
+              ],
+              [
+                -1.0803,
+                54.62
+              ],
+              [
+                -1.0848,
+                54.6197
+              ],
+              [
+                -1.0847,
+                54.6207
+              ],
+              [
+                -1.082,
+                54.6207
+              ],
+              [
+                -1.0783,
+                54.621
+              ],
+              [
+                -1.0781,
+                54.6204
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "smp_name": "The Tyne to Flamborough Head",
+    "smp_pu": "PU14.1",
+    "long_term_with_smp": {
+      "policy": "Hold The Line",
+      "interpretation": "Erosion restricted",
+      "band": 0,
+      "zone": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -1.0781,
+                54.6204
+              ],
+              [
+                -1.0803,
+                54.62
+              ],
+              [
+                -1.0848,
+                54.6197
+              ],
+              [
+                -1.0847,
+                54.6207
+              ],
+              [
+                -1.082,
+                54.6207
+              ],
+              [
+                -1.0783,
+                54.621
+              ],
+              [
+                -1.0781,
+                54.6204
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "medium_term_no_intervention": {
+      "band": 33,
+      "zone": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -1.0779,
+                54.6201
+              ],
+              [
+                -1.0802,
+                54.6197
+              ],
+              [
+                -1.0848,
+                54.6194
+              ],
+              [
+                -1.0847,
+                54.6207
+              ],
+              [
+                -1.082,
+                54.6207
+              ],
+              [
+                -1.0783,
+                54.621
+              ],
+              [
+                -1.0779,
+                54.6201
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "long_term_no_intervention": {
+      "band": 64,
+      "zone": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -1.0778,
+                54.6198
+              ],
+              [
+                -1.0812,
+                54.6193
+              ],
+              [
+                -1.0849,
+                54.6191
+              ],
+              [
+                -1.0847,
+                54.6207
+              ],
+              [
+                -1.082,
+                54.6207
+              ],
+              [
+                -1.0783,
+                54.621
+              ],
+              [
+                -1.0778,
+                54.6198
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "nearest_frontage_m": 743,
+    "risk_level": "low"
+  }
+}

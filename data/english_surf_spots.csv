@@ -1,0 +1,237 @@
+spot_id,name,lat,lon,subregion,relivable_rating
+613282a64924a8bf64a65bea,Bacton,52.8557,1.4771,East Anglia,0
+584204214e65fad6a7709cf3,Cromer Pier,52.933,1.303,East Anglia,4
+613147a930cae76d3b6f48bb,Gorleston,52.56968,1.73653,East Anglia,0
+613145d2f73fc6dc80aada92,Great Yarmouth,52.603,1.7391,East Anglia,0
+584204214e65fad6a7709cf5,Lowestoft,52.466,1.749,East Anglia,0
+613148d39046a0bb3048b046,Mundesley,52.8789,1.439,East Anglia,0
+584204214e65fad6a7709cf2,Runton,52.936,1.289,East Anglia,0
+61328b40b860000716d8a867,Sea Palling,52.79,1.603,East Anglia,0
+584204214e65fad6a7709cf6,Southwold,52.334,1.693,East Anglia,0
+584204204e65fad6a770909f,Walcott,52.843,1.501,East Anglia,3
+613295f5735ce57adc5008ad,Winterton-on-Sea,52.7173,1.6994,East Anglia,0
+5842041f4e65fad6a7708ca5,Bude Crooklets,50.83565,-4.55516,North Cornwall,4
+5a282eb11d8788001b7967a1,Bude Summerleaze,50.8316,-4.55437,North Cornwall,4
+584204204e65fad6a77090b3,Constantine,50.535,-5.03,North Cornwall,0
+584204204e65fad6a77090af,Crackington Haven,50.743,-4.641,North Cornwall,0
+584204204e65fad6a77090ba,Crantock,50.408,-5.127,North Cornwall,4
+584204204e65fad6a77090bd,Cribbar,50.426,-5.103,North Cornwall,0
+61bd0f16a9fdce2918d7929f,Daymer Bay,50.559465,-4.92883,North Cornwall,0
+61bd3a8086787d357dc2dee3,Duckpool,50.875666,-4.55863,North Cornwall,0
+584204214e65fad6a7709cef,Great Western,50.418,-5.079,North Cornwall,0
+584204204e65fad6a77090b2,Harlyn,50.543,-4.997,North Cornwall,4
+584204204e65fad6a77090be,Holywell Bay,50.394,-5.149,North Cornwall,0
+6139319ef1349483a6f4a13d,Little Fistral,50.4229,-5.1,North Cornwall,0
+584204204e65fad6a77090b9,Lusty Glaze,50.42255985620887,-5.06934,North Cornwall,0
+584204204e65fad6a77090b6,Mawgan Porth,50.46925105120953,-5.03871,North Cornwall,4
+584204214e65fad6a7709cec,North Fistral Beach,50.41916667,-5.09917,North Cornwall,5
+61bd38599946810bd0377f1e,Northcott Mouth,50.847957,-4.55562,North Cornwall,0
+584204204e65fad6a77090c0,Perran Sands,50.367,-5.155,North Cornwall,0
+5842041f4e65fad6a7708c94,Perranporth,50.34833333,-5.15889,North Cornwall,5
+584204204e65fad6a77090b1,Polzeath,50.577,-4.925,North Cornwall,5
+584204204e65fad6a77090b8,Porth,50.42700276309305,-5.06669282913208,North Cornwall,0
+61393250b91b2a581a31dac2,Porthcothan Bay,50.5116,-5.0314,North Cornwall,0
+61bd083337bb4a008eab6844,Porthminster Beach,50.209365,-5.47461,North Cornwall,0
+584204204e65fad6a77090aa,Sandymouth,50.862,-4.561,North Cornwall,0
+584204214e65fad6a7709ced,South Fistral Beach,50.41464,-5.10353,North Cornwall,5
+584204204e65fad6a77090bb,Tolcarne,50.419,-5.075,North Cornwall,4
+584204204e65fad6a77090bc,Towan,50.417,-5.084,North Cornwall,4
+584204204e65fad6a77090ae,Trebarwith Strand,50.646,-4.765,North Cornwall,0
+5842041f4e65fad6a7708c93,Trevaunance Cove,50.32127176553899,-5.20277738571167,North Cornwall,0
+584204204e65fad6a77090b0,Trevone,50.547,-4.981,North Cornwall,4
+584204204e65fad6a77090b5,Treyarnon,50.528,-5.029,North Cornwall,0
+5842041f4e65fad6a7708ca6,Watergate Bay,50.444688234298745,-5.04622,North Cornwall,4
+584204204e65fad6a77090ad,Widemouth Bay,50.792,-4.564,North Cornwall,5
+61394976ea00f8b5ca484b8e,Bucks Mills,50.990242183844146,-4.34417,North Devon,0
+5d6ffa60c5015800018f660b,Combe Martin,51.2084596927577,-4.04218,North Devon,0
+584204204e65fad6a77090ab,Combesgate,51.1790739488,-4.21430826187,North Devon,4
+5842041f4e65fad6a7708ca4,Croyde,51.13027778,-4.24083,North Devon,5
+61394f3afdfcd734116b531b,Hele Bay,51.2115589552812,-4.0971,North Devon,0
+5842041f4e65fad6a7708ca2,Lynmouth,51.23472222,-3.82583,North Devon,4
+6139485519d668f76927012c,Minehead,51.207668,-3.46335,North Devon,0
+5842041f4e65fad6a7708ca1,Putsborough,51.15111111,-4.22333,North Devon,4
+5842041f4e65fad6a7708e10,Saunton,51.1139223905,-4.22952,North Devon,5
+584204204e65fad6a77090b4,Westward Ho!,51.047,-4.24,North Devon,5
+584204204e65fad6a77090ac,Woolacombe Bay,51.172,-4.218,North Devon,5
+5842041f4e65fad6a7708c9e,Alnmouth,55.38778,-1.60458,Northeast England,0
+5842041f4e65fad6a7708c9f,Bamburgh,55.61044,-1.69835,Northeast England,0
+584204204e65fad6a770907c,Beadnell Bay,55.53468,-1.62838,Northeast England,0
+584204204e65fad6a770907d,Blyth Beach,55.11564,-1.49549,Northeast England,0
+5842041f4e65fad6a7708c9d,Cayton Bay,54.24686,-0.36208,Northeast England,4
+61325cedb6396238ebdfd8e6,Cullercoats,55.03451,-1.43054,Northeast England,0
+5842041f4e65fad6a7708ca0,Embleton Bay,55.49966,-1.61205,Northeast England,0
+613fc40978adcd21f8cb487a,Filey,54.20751,-0.28249,Northeast England,0
+584204204e65fad6a7709086,Hornsea,53.91339,-0.15892,Northeast England,0
+584204204e65fad6a7709084,Longsands,55.02593,-1.42299,Northeast England,4
+6130067deb3d9f2a79ea34b5,Marske to Tees,54.62567,-1.09237,Northeast England,0
+584204204e65fad6a7709083,Redcar,54.62373,-1.08608,Northeast England,0
+5842041f4e65fad6a7708c99,Saltburn,54.58702,-0.96739,Northeast England,4
+5842041f4e65fad6a7708c9c,Sandsend,54.49852,-0.65568,Northeast England,0
+584204204e65fad6a7709088,Scarborough North Bay,54.29078,-0.39845,Northeast England,4
+584204204e65fad6a7709081,Seaton Carew,54.65996,-1.17997,Northeast England,0
+65c36a8d7c0c29a1bd7fd850,Seaton Sluice,55.08851,-1.47652,Northeast England,0
+613fc35806a1e5c60e2db693,Skegness,53.14648,0.34974,Northeast England,0
+584204204e65fad6a7709087,South Bay,54.27809,-0.39339,Northeast England,0
+584204204e65fad6a7709082,South Shields,54.99884,-1.40708,Northeast England,0
+61313ad0f7158a61d3f8e789,Steetley Beach,54.71074,-1.20768,Northeast England,0
+604a7a8c3a388458aba839b3,Sunderland,54.91205,-1.35447,Northeast England,0
+613fc2c678adcdc5e5cb4874,Sutton on Sea,53.32037,0.28329,Northeast England,0
+6131408465ca88852ab5f08f,The Gare,54.63753,-1.12874,Northeast England,0
+584204204e65fad6a7709085,Whitby Beach,54.49257,-0.61862,Northeast England,4
+584204204e65fad6a770907f,Whitley Bay,55.04878,-1.44394,Northeast England,0
+613fc07caf6396009292a8a1,Withernsea,53.73178,0.03605,Northeast England,0
+640b9e21e920302787e1e81f,Carlyon Beach,50.336261,-4.73221,South Cornwall,0
+61c11ea39cbe719094f23bcf,Downderry,50.360509,-4.3698,South Cornwall,0
+584204204e65fad6a77090c4,Falmouth,50.14389,-5.06674,South Cornwall,0
+640b9e15e92030503ee1e519,Looe,50.351914,-4.45117,South Cornwall,0
+613920f8ef899138b1d66c81,Maenporth Beach,50.1253,-5.0893,South Cornwall,0
+61c11d00903b3545e94dd9cc,Millendreath,50.36089,-4.43589,South Cornwall,0
+61c11ab1903b35ad994d54b1,Par Sands,50.3468,-4.69656,South Cornwall,0
+61390740e3a39f95b5bc1f2d,Pendower Beach,50.2042,-4.9455,South Cornwall,0
+604b95b0219e49fe952ac4c0,Pentewan,50.2888,-4.7799,South Cornwall,0
+61c11bbfda2e0467414ffb2e,Polkerris,50.338237,-4.68205,South Cornwall,0
+640b9e1bde81d54f6c0e6615,Porthpean,50.323082,-4.76521,South Cornwall,0
+61c11fc624dd6ce08fa45f57,Portwrinkle,50.361677,-4.31594,South Cornwall,0
+605e6cf85b5f7230986891c5,Seaton Beach,50.363894,-4.38598,South Cornwall,0
+584204204e65fad6a77090c3,Swanpool,50.14,-5.076,South Cornwall,0
+61c120d7903b35ccbc4eaa5c,Tregantle,50.352826,-4.27163,South Cornwall,0
+584204204e65fad6a77090c5,Whitsand Bay,50.352,-4.278,South Cornwall,3
+584204204e65fad6a77090c9,Bantham,50.27897,-3.88536,South Devon,4
+613b99af6a25625a8eccc524,Beer Point,50.6848,-3.0951,South Devon,0
+604bc5c5ab677d2dddb8cb82,Bigbury,50.2805,-3.8934,South Devon,0
+6139290ff187b87bdd8d8074,Blackpool Sands,50.31830690138395,-3.61025,South Devon,0
+613ba013f9041d2943321fe6,Branscombe Beach,50.6873,-3.1294,South Devon,0
+61c1241061c69f2be0a7568d,Broadsands,50.407128,-3.55448,South Devon,0
+613b9e00dab50d01061718d3,Budleigh Salterton,50.6278,-3.3195,South Devon,0
+584204204e65fad6a77090c7,Challaborough,50.28467778071562,-3.90062,South Devon,0
+613b9b4e915e7b0e471825de,Dawlish,50.5752,-3.4675,South Devon,0
+61c1262261c69f7f53a7c37b,Dawlish Warren,50.599833,-3.43721,South Devon,0
+604b949c3a2c552aed3b0fdd,Exmouth,50.61,-3.41,South Devon,0
+6138ff9e4b5b40a9c0f38074,Goodrington Sands,50.4239,-3.5586,South Devon,0
+61c6152018c0463275406e95,Hope Cove,50.246652,-3.85926,South Devon,0
+61c121aa903b3509bf4eda0b,Mothecombe,50.30931,-3.95266,South Devon,0
+604b906f909f8fb8d1e1a768,Paignton,50.438,-3.558,South Devon,0
+613902c0065181634b2d7bae,Preston Beach,50.4425,-3.5547,South Devon,0
+61c126f661c69fc905a7ef60,Sandy Bay,50.609133,-3.36664,South Devon,0
+613ba08d0a40ef2200b1ca09,Seaton,50.7027,-3.0694,South Devon,0
+604a7f34c8c32d683355303b,Sidmouth,50.6756,-3.2368,South Devon,0
+6138fe50253aa7e580d8997b,Slapton Sands,50.286,-3.6445,South Devon,0
+604f78b169b0fc122a53c33a,Teignmouth,50.55,-3.49,South Devon,0
+61c122dbda2e04967d517eaa,Thurlestone,50.26406,-3.86214,South Devon,0
+640b9e27606c4563f2f4b26a,Torbay,50.4289,-3.4812,South Devon,0
+584204204e65fad6a77090c6,Wembury,50.315,-4.086,South Devon,0
+613fb969b02b23d3d70ecd2d,Bexhill-on-Sea,50.83651370492595,0.47253,Southern England East,0
+613bcd30aef7046f44c02f20,Birling Gap,50.74,0.2,Southern England East,0
+61c12f6b903b3557ce519d5a,Bognor Regis,50.781302,-0.67452,Southern England East,0
+584204204e65fad6a77090a1,Bracklesham Bay,50.76,-0.86,Southern England East,4
+61ba7029a052dac52a845758,Brighton,50.81819,-0.13922,Southern England East,0
+604bc4e9909f8fae5be1a78f,Brighton Marina,50.8114,-0.0923,Southern England East,0
+5b0d97856f349c001a3b7cab,Brighton West Pier,50.819304496632945,-0.1455,Southern England East,0
+613be5026fd17c26d1f9f69c,Calshot,50.8078,-1.3197,Southern England East,0
+604bca4106f62cd01d31481e,Camber Sands,50.9331,0.796,Southern England East,0
+613bd4d3e2cf5db6fdece9c5,Dungeness,50.9126,0.9747,Southern England East,0
+584204204e65fad6a770909d,East Wittering,50.765,-0.876,Southern England East,4
+613bcf8be27454d2b96e67ae,Eastbourne,50.7639,0.291,Southern England East,0
+613bd55ce2cf5d0c46ece9cb,Fairlight,50.8753,0.6716,Southern England East,0
+604bc812c27c3c577be08ac4,Folkestone,51.0814,1.1913,Southern England East,0
+613bd276f465600f6b7edb5d,Hastings,50.8527,0.5755,Southern England East,0
+604bc67d6bec13ed6e0cf33b,Hayling Island,50.7798,-0.9803,Southern England East,0
+613bd4131e5772d9940e6dfa,Herne Bay,51.3723,1.1371,Southern England East,0
+613be4741cd8ffb0726a817f,Hill Head,50.8163,-1.2345,Southern England East,0
+601896c5797ce97445fac470,Hot Pipe,50.8275,-0.2284,Southern England East,0
+61ba6e871679e26eb942f058,Hove,50.823182,-0.17039,Southern England East,0
+584204204e65fad6a7709093,Joss Bay,51.38,1.449,Southern England East,3
+613be8cc970caf2d3338345f,Keyhaven,50.7198,-1.5527,Southern England East,0
+613bd608196d8505f9f1896c,Lancing Beach,50.8189,-0.3238,Southern England East,0
+613bd0e736d511e73e6b38b9,Littlehampton,50.8018,-0.5331,Southern England East,0
+613fb82de775ff4144eae4e3,Main Sands,51.388889,1.37689,Southern England East,0
+613fbed1dd594237a8d3dd86,Newhaven,50.77938,0.04381,Southern England East,0
+613fbfa15ca3bc1680db3452,Pevensey Bay,50.81111,0.35314,Southern England East,0
+613fba06c6300f068257306d,Ramsgate Main Beach,51.331661,1.42537,Southern England East,0
+60df8c1353e32275590dc891,Sandwich Bay,51.28918484588586,1.38143,Southern England East,0
+61c12ed861c69fe59fa9825d,Selsey Beach,50.724605,-0.79654,Southern England East,0
+613bce46e080751d2530bc17,Southend on Sea,51.5299,0.7457,Southern England East,0
+613be7278a064be58b2b92bf,Southsea,50.7788,-1.0728,Southern England East,0
+613bcecb3d7c4a043b49527e,Tidemills,50.78095,0.06697,Southern England East,0
+613bd1831e577244cd0e6dee,Viking Bay,51.3581,1.4458,Southern England East,0
+613bd33b1e5772d2330e6df4,Walton-on-the-Naze,51.8481,1.2803,Southern England East,0
+604b93727e36356e3c8d9822,West Wittering,50.7739,-0.9084,Southern England East,0
+613fb787e1a9a3e525c48ad5,Westcliff Promenade,51.326278,1.40744,Southern England East,0
+5a8f1e23b0f634001ada0b11,Worthing,50.80675369833302,-0.37285,Southern England East,0
+613bc8e0c060e01a55d9ebd6,Avon Beach,50.7292,-1.7329,Southern England West,0
+61c12d2dda2e0434ec5395c2,Barton on Sea,50.733995,-1.6563,Southern England West,0
+584204214e65fad6a7709cee,Boscombe,50.7175,-1.835,Southern England West,4
+584204214e65fad6a7709cf4,Bournemouth,50.713,-1.877,Southern England West,5
+613ba295bf39c83c40ee3c6e,Bowleaze Cove,50.6364,-2.4215,Southern England West,0
+613bcbad5c02790ed0d5aedf,Branksome Dene Chine,50.705583,-1.90868,Southern England West,0
+61c127d49cbe7110bcf41f42,Charmouth,50.732738,-2.8985,Southern England West,0
+61395958f13494014ef4a178,Chesil Beach,50.6267,-2.5605,Southern England West,0
+61c12a1324dd6c06a1a67e43,Cogden,50.690657,-2.7077,Southern England West,0
+5ad50d3e8e6264001ab2d694,Compton,50.66272389356456,-1.47861,Southern England West,0
+613ba1cdfe976c52bf4cb5f1,Durdle Door,50.6216,-2.279,Southern England West,0
+613bd038d55308fca08054cf,Freshwater,50.6681,-1.5122,Southern England West,0
+604a75d1d397152373ccb0d8,Highcliffe,50.7362,-1.7008,Southern England West,0
+61c1293f24dd6c2177a652d9,Hive Beach,50.695067,-2.72018,Southern England West,0
+613bea0836d51135b86b38bf,Hordle Cliff,50.7246,-1.6079,Southern England West,0
+5842041f4e65fad6a7708e1f,Kimmeridge Bay,50.6111,-2.133,Southern England West,0
+613ba11d970cafe0f13833ea,Lulworth Cove,50.6183,-2.2469,Southern England West,0
+584204214e65fad6a7709d17,Lyme Regis,50.72276418262871,-2.93429,Southern England West,5
+613ba68936d5112d6d6b38b3,Milford on Sea,50.7209,-1.5929,Southern England West,0
+613a73bdd66c4039f3633bcc,Mudeford Harbour,50.726,-1.7433,Southern England West,0
+613bcac9bf39c8220cee3c74,Portland Harbour,50.5829,-2.4412,Southern England West,0
+630d4437b0a14553709f34f2,Ringstead Bay,50.631288,-2.35343,Southern England West,0
+61c12bce3883916d0d0e850d,Sandbanks Beach,50.688501,-1.93668,Southern England West,0
+5ad50c41156dd5001a270d42,Sandown,50.64025276838601,-1.167725347208716,Southern England West,0
+61c1287eda2e04bb0d52a662,Seatown,50.721901,-2.82394,Southern England West,0
+613950465f0d00288cf60f6b,Southbourne,50.7193,-1.8012,Southern England West,0
+61395abb84ce2eb3d50066c8,Swanage,50.6133,-1.9567,Southern England West,0
+613a74e21b7d1f6726589a77,The Bill,50.5118,-2.4584,Southern England West,0
+5ad532add6448d001c8bd51c,Ventnor,50.592799003679474,-1.2080589650934144,Southern England West,0
+613bc998dab50d4dc21718ff,West Bay,50.71063,-2.76619,Southern England West,0
+61c12ac6903b350a9950b739,West Bexington,50.675153,-2.66563,Southern England West,0
+613ba478f7cc210917c128d9,Weymouth,50.6112,-2.4523,Southern England West,0
+613fc96e4f03d24f96cfff09,Barrel Rock,54.0661,-4.7404,West Coast and Isle of Man,0
+613fcd6de22bc77f76ddc00d,Blackpool South,53.7946,-3.0592,West Coast and Isle of Man,0
+6140d0e47ffe5b1859666ff1,Castletown,54.0755,-4.6311,West Coast and Isle of Man,0
+640b9e334878eb632d1e7ad0,Earnse Bay,54.1169681,-3.27607,West Coast and Isle of Man,0
+6140d2acd097180ddd3bba21,Fleetwood Beach,53.9293,-3.0116,West Coast and Isle of Man,0
+6140d15b998a2a7f5d19ad99,Gansey,54.0832,-4.7283,West Coast and Isle of Man,0
+613fc5cde77f9977e5b788dc,Isle of Man,54.0755,-4.6967,West Coast and Isle of Man,0
+6140cf46f6a043abf7fdad9e,Labrax,54.893,-5.1643,West Coast and Isle of Man,0
+6140d3a77e2c87c01c7cd84f,Laxey Beach,54.22422,-4.39203,West Coast and Isle of Man,0
+640b9e2d4519051575e0c483,Leasowe Bay,53.4251255,-3.09398,West Coast and Isle of Man,0
+6140d3351b36d74adc7ffc6d,Peel Beach,54.22475,-4.69532,West Coast and Isle of Man,0
+6140d077cdf10f738a53340c,Port Erin,54.0862,-4.7601,West Coast and Isle of Man,0
+6140d21bfe354c055f1abffa,Rossall Point,53.9246,-3.0408,West Coast and Isle of Man,0
+613fc7c6c41c226cc2bdbb47,S*** Pipe,54.07,-4.731,West Coast and Isle of Man,0
+613fc71ee22bc76e93ddc007,Silecroft,54.2167,-3.3514,West Coast and Isle of Man,0
+613fcbc2dbfb963cf4604068,St Bees,54.4903,-3.6065,West Coast and Isle of Man,0
+6140cfe08c7d86d8f879b1ef,The Ayre,54.4069,-4.4136,West Coast and Isle of Man,0
+613fc89ddd5942f966d3dd8c,The Edge,54.0669,-4.7348,West Coast and Isle of Man,0
+613fc901edea396232f95172,The Point,54.0667,-4.7368,West Coast and Isle of Man,0
+613fc83eba5f90c218099d1b,drivers,54.0681,-4.7335,West Coast and Isle of Man,0
+61bd0a2ad7a7347c671c24f3,Carbis Bay,50.199586,-5.46468,West Cornwall,0
+584204204e65fad6a77090c1,Chapel Porth,50.30227930111261,-5.23793,West Cornwall,0
+61392b2e19d668119a27005c,Coverack,50.024247,-5.09649,West Cornwall,0
+584204214e65fad6a7709d2a,Godrevy,50.2304,-5.3946,West Cornwall,4
+584204204e65fad6a77090bf,Gwenver,50.09,-5.691,West Cornwall,0
+5842041f4e65fad6a7708c95,Gwithian,50.224940120492306,-5.39939,West Cornwall,4
+604b97ba2aecfaefc4e3085c,Hayle Rivermouth,50.2029,-5.4348,West Cornwall,0
+61392a6ab1e9d2464de1cd6b,Kennack Sands,50.004207,-5.16268,West Cornwall,0
+6042629f451c8835aa72b7f6,Marazion,50.1183,-5.4836,West Cornwall,0
+61bd0cbfc76742be1f419517,Mexico Towans,50.20875,-5.41624,West Cornwall,0
+61392d046b2f9b9daf9c47e2,Mullion Cove,50.014422,-5.259,West Cornwall,0
+613927a4208c69f7fad50eeb,Penzance,50.12238,-5.52672,West Cornwall,0
+613904450ff37119d27d029b,Perranuthnoe,50.1107,-5.4425,West Cornwall,0
+6139244dcd0e0e1d3a25d045,Poldhu Cove,50.0332,-5.2652,West Cornwall,0
+6139269e69981d4386cf134f,Porthcurno,50.042692,-5.64946,West Cornwall,0
+61bd094c37bb4a7330aba226,Porthgwidden Beach,50.217324,-5.47538,West Cornwall,0
+61bd0b08b0079a147f3caf60,Porthkidney Beach,50.198447,-5.44317,West Cornwall,0
+5842041f4e65fad6a7708c9b,Porthleven,50.08194444,-5.32111,West Cornwall,0
+5842041f4e65fad6a7708c96,Porthmeor,50.2166643894,-5.48326,West Cornwall,0
+61392e286b2f9b4cda9c47e8,Porthoustock,50.055642,-5.06368,West Cornwall,0
+5842041f4e65fad6a7708c98,Porthtowan,50.288859416902646,-5.24643,West Cornwall,4
+584204204e65fad6a77090c2,Portreath,50.263,-5.294,West Cornwall,4
+5842041f4e65fad6a7708c9a,Praa Sands,50.10222222,-5.38833,West Cornwall,5
+5842041f4e65fad6a7708c97,Sennen,50.082260215669976,-5.69518,West Cornwall,5
+61392f9a2ec3df0722c5d226,Tresco,49.9738,-6.334,West Cornwall,0

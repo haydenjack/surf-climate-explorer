@@ -1,0 +1,166 @@
+{
+  "id": "6138fe50253aa7e580d8997b",
+  "name": "Slapton Sands",
+  "lat": 50.286,
+  "lon": -3.6445,
+  "subregion": "South Devon",
+  "rating": 0.0,
+  "sea_level": {
+    "status": "ok",
+    "scenario": "RCP8.5 50th percentile",
+    "baseline": "1981-2000",
+    "unit": "cm",
+    "anomaly_cm": {
+      "2030": 17.0,
+      "2040": 23.5,
+      "2050": 31.0,
+      "2060": 39.4,
+      "2070": 48.8,
+      "2080": 58.9,
+      "2090": 69.7,
+      "2100": 81.1
+    },
+    "n_polygons": 1,
+    "buffer_m": 2000
+  },
+  "erosion": {
+    "climate_allowance": "Higher Central (70th pct, ~RCP8.5)",
+    "status": "ok",
+    "medium_term_with_smp": {
+      "policy": "Managed Realignment",
+      "interpretation": "Erosion unrestricted",
+      "band": 4,
+      "zone": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -3.6359,
+                50.2984
+              ],
+              [
+                -3.6361,
+                50.2982
+              ],
+              [
+                -3.6369,
+                50.2985
+              ],
+              [
+                -3.6368,
+                50.2987
+              ],
+              [
+                -3.6359,
+                50.2984
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "smp_name": "Durlston Head to Rame Head",
+    "smp_pu": "6b75",
+    "long_term_with_smp": {
+      "policy": "Managed Realignment",
+      "interpretation": "Erosion unrestricted",
+      "band": 12,
+      "zone": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -3.6359,
+                50.2984
+              ],
+              [
+                -3.6361,
+                50.2982
+              ],
+              [
+                -3.637,
+                50.2986
+              ],
+              [
+                -3.6367,
+                50.2987
+              ],
+              [
+                -3.6359,
+                50.2984
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "medium_term_no_intervention": {
+      "band": 4,
+      "zone": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -3.6359,
+                50.2984
+              ],
+              [
+                -3.6361,
+                50.2982
+              ],
+              [
+                -3.6369,
+                50.2985
+              ],
+              [
+                -3.6368,
+                50.2987
+              ],
+              [
+                -3.6359,
+                50.2984
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "long_term_no_intervention": {
+      "band": 12,
+      "zone": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -3.6359,
+                50.2984
+              ],
+              [
+                -3.6361,
+                50.2982
+              ],
+              [
+                -3.637,
+                50.2986
+              ],
+              [
+                -3.6367,
+                50.2987
+              ],
+              [
+                -3.6359,
+                50.2984
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    "nearest_frontage_m": 1484,
+    "risk_level": "high"
+  }
+}

@@ -32,6 +32,7 @@ import argparse
 import csv
 import json
 import math
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -140,11 +141,25 @@ def _rdp(points: list, eps: float) -> list:
     return [points[i] for i in range(n) if keep[i]]
 
 
-def _clean_geometry(geometry: dict, ndigits: int = 5, eps: float = 0.00003):
+def _merge_to_multipolygon(geometries: list):
+    """Combine several Polygon/MultiPolygon geometries into one MultiPolygon."""
+    polygons = []
+    for g in geometries:
+        if not g:
+            continue
+        if g.get("type") == "Polygon":
+            polygons.append(g["coordinates"])
+        elif g.get("type") == "MultiPolygon":
+            polygons.extend(g["coordinates"])
+    return {"type": "MultiPolygon", "coordinates": polygons} if polygons else None
+
+
+def _clean_geometry(geometry: dict, ndigits: int = 4, eps: float = 0.0001):
     """Round, drop z, and simplify polygon rings so stored zones stay light.
 
-    eps is in degrees (~3 m): preserves the zone shape at the inset map's scale
-    while still cutting the vertex count substantially.
+    The merged multi-frontage zones span ~2-4 km and are viewed in a small inset,
+    so ~11 m tolerance (eps) and 4 dp rounding are sub-pixel there but cut the
+    vertex count and file size by an order of magnitude.
     """
     if not geometry:
         return None
@@ -160,7 +175,16 @@ def _clean_geometry(geometry: dict, ndigits: int = 5, eps: float = 0.00003):
 
     def _polygon(poly):
         rings = [r for r in (_ring(r) for r in poly) if r]
-        return rings or None
+        if not rings:
+            return None
+        # Drop tiny speck polygons (< ~15 m across) — invisible at the inset's
+        # scale but they inflate the polygon count and file size.
+        outer = rings[0]
+        xs = [p[0] for p in outer]
+        ys = [p[1] for p in outer]
+        if (max(xs) - min(xs)) < 0.00015 and (max(ys) - min(ys)) < 0.00015:
+            return None
+        return rings
 
     gtype = geometry.get("type")
     coords = geometry.get("coordinates", [])
@@ -224,8 +248,13 @@ def fetch_sea_level(lat: float, lon: float) -> dict:
 # --------------------------------------------------------------------------- #
 # Coastal erosion risk
 # --------------------------------------------------------------------------- #
-def _fetch_nearest_frontage(collection: str, lat: float, lon: float):
-    """Return (properties, distance_m, geometry) for the nearest NCERM frontage.
+def _fetch_frontages(collection: str, lat: float, lon: float):
+    """Return (nearest_properties, nearest_distance_m, merged_zone_geometry).
+
+    The merged zone is a MultiPolygon of every frontage within
+    EROSION_ZONE_RADIUS_M of the break (the nearest is always included), so the
+    inset map can show a useful stretch of coast rather than one short segment.
+    The risk classification still comes from the nearest frontage's properties.
 
     Returns (None, inf, None) if the request fails or no frontage is in range.
     """
@@ -233,21 +262,30 @@ def _fetch_nearest_frontage(collection: str, lat: float, lon: float):
         bbox = f"{lon - delta},{lat - delta},{lon + delta},{lat + delta}"
         data = _get_json(
             f"{config.EROSION_BASE_URL}/collections/{collection}/items",
-            {"bbox": bbox, "limit": "100"},
+            {"bbox": bbox, "limit": "200"},
             accept_json=True,
         )
         if data is None:
             return None, math.inf, None  # request failed
         feats = data.get("features", [])
         if feats:
-            best_props, best_dist, best_geom = None, math.inf, None
-            for f in feats:
-                d = _min_distance_m(lon, lat, f.get("geometry"))
-                if d < best_dist:
-                    best_dist = d
-                    best_props = f.get("properties", {})
-                    best_geom = f.get("geometry")
-            return best_props, best_dist, best_geom
+            scored = sorted(
+                ((_min_distance_m(lon, lat, f.get("geometry")), f) for f in feats),
+                key=lambda t: t[0],
+            )
+            nearest_dist, nearest_feat = scored[0]
+            # Zone = nearest frontage plus any others within the radius. Sorted
+            # ascending, so we can stop at the first that's out of range.
+            zone_geoms = [nearest_feat.get("geometry")]
+            for dist, feat in scored[1:]:
+                if dist > config.EROSION_ZONE_RADIUS_M:
+                    break
+                zone_geoms.append(feat.get("geometry"))
+            return (
+                nearest_feat.get("properties", {}),
+                nearest_dist,
+                _merge_to_multipolygon(zone_geoms),
+            )
     return None, math.inf, None  # nothing in the area at any bbox size
 
 
@@ -282,7 +320,7 @@ def fetch_erosion(lat: float, lon: float) -> dict:
     nearest_overall = math.inf
 
     for field, collection in config.EROSION_COLLECTIONS.items():
-        props, dist, geom = _fetch_nearest_frontage(collection, lat, lon)
+        props, dist, geom = _fetch_frontages(collection, lat, lon)
         if props is None and dist == math.inf:
             # Could be a failed request or genuinely no frontage; flag below.
             result[field] = None
@@ -292,8 +330,8 @@ def fetch_erosion(lat: float, lon: float) -> dict:
         if dist > config.EROSION_MAX_DISTANCE_M:
             result[field] = None
             continue
-        # The frontage polygon is the projected erosion-zone footprint; keep it
-        # so the frontend can visualise the recession extent near the break.
+        # Merged footprint of the nearby frontages (the projected erosion zone);
+        # kept so the frontend can visualise the recession extent along the coast.
         zone = _clean_geometry(geom)
         if "with_smp" in field:
             term = "mt" if "medium" in field else "lt"
@@ -330,79 +368,124 @@ def fetch_erosion(lat: float, lon: float) -> dict:
 # --------------------------------------------------------------------------- #
 # Driver
 # --------------------------------------------------------------------------- #
-def load_breaks(csv_path: str) -> list[dict]:
-    breaks = []
+def load_spots(csv_path: str) -> list[dict]:
+    """Load surf spots from the scraped English-spots CSV (see scrape_surfline.py)."""
+    spots = []
     with open(csv_path, newline="", encoding="utf-8") as fh:
         for row in csv.DictReader(fh):
-            breaks.append(
+            spots.append(
                 {
-                    "id": int(row["id"]),
-                    "name": row["name"].strip().title(),
-                    "lat": float(row["latitude"]),
-                    "lon": float(row["longitude"]),
-                    "region": row["region"].strip().title(),
+                    "id": row["spot_id"].strip(),
+                    "name": row["name"].strip(),
+                    "lat": float(row["lat"]),
+                    "lon": float(row["lon"]),
+                    "subregion": (row.get("subregion") or "").strip() or None,
+                    "rating": float(row.get("relivable_rating") or 0),
                 }
             )
-    return breaks
+    return spots
+
+
+SOURCES = {
+    "sea_level": {
+        "name": "Met Office UKCP18 Time-mean Sea Level Projections to 2100",
+        "scenario": "RCP8.5, 50th percentile",
+        "baseline": "1981-2000",
+        "endpoint": config.SEA_LEVEL_URL,
+        "licence": "Open Government Licence v3.0",
+    },
+    "erosion": {
+        "name": "National Coastal Erosion Risk Mapping (NCERM) 2024",
+        "publisher": "Environment Agency",
+        "climate_allowance": f"{config.EROSION_CC}th pct (Higher Central, ~RCP8.5)",
+        "endpoint": config.EROSION_BASE_URL,
+        "licence": "Open Government Licence v3.0",
+    },
+    "surf_spots": {
+        "name": "Surfline mapview (public, undocumented) — England spots",
+        "endpoint": "https://services.surfline.com/kbyg/mapview",
+    },
+}
+
+
+def _index_entry(rec: dict) -> dict:
+    """Lightweight record for the map index (no heavy zone geometry)."""
+    sl = rec.get("sea_level") or {}
+    anomaly = (sl.get("anomaly_cm") or {}) if sl.get("status") == "ok" else {}
+    return {
+        "id": rec["id"],
+        "name": rec["name"],
+        "lat": rec["lat"],
+        "lon": rec["lon"],
+        "subregion": rec.get("subregion"),
+        "rating": rec.get("rating", 0),
+        "risk_level": (rec.get("erosion") or {}).get("risk_level", "unknown"),
+        "sea_level_2100": anomaly.get("2100"),
+    }
+
+
+def _write_index(entries: list[dict], processed: int, total: int) -> None:
+    payload = {
+        "metadata": {
+            "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "version": "V1-lazy",
+            "scope": "England — sea level rise + coastal erosion (sea temperature deferred)",
+            "sources": SOURCES,
+            "count": len(entries),
+            "processed": processed,
+            "total": total,
+        },
+        "spots": entries,
+    }
+    with open(config.INDEX_JSON, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, indent=2)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--limit", type=int, default=None, help="process first N breaks")
+    parser.add_argument("--limit", type=int, default=None, help="process first N spots")
     parser.add_argument("--csv", default=config.INPUT_CSV)
-    parser.add_argument("--out", default=config.OUTPUT_JSON)
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="re-fetch spots even if their detail file already exists",
+    )
     args = parser.parse_args()
 
-    breaks = load_breaks(args.csv)
+    spots = load_spots(args.csv)
     if args.limit:
-        breaks = breaks[: args.limit]
+        spots = spots[: args.limit]
+    os.makedirs(config.SPOTS_DIR, exist_ok=True)
 
-    print(f"Processing {len(breaks)} surf breaks...")
-    records = []
-    for i, brk in enumerate(breaks, 1):
-        print(f"  [{i}/{len(breaks)}] {brk['name']} ({brk['region']})")
-        sea = fetch_sea_level(brk["lat"], brk["lon"])
-        ero = fetch_erosion(brk["lat"], brk["lon"])
-        print(
-            f"      sea_level={sea['status']}  "
-            f"erosion={ero['status']} ({ero.get('risk_level')})"
-        )
-        records.append({**brk, "sea_level": sea, "erosion": ero})
+    total = len(spots)
+    print(f"Processing {total} surf spots (resumable; existing files are skipped)...")
+    index, fetched, skipped = [], 0, 0
+    for i, spot in enumerate(spots, 1):
+        path = os.path.join(config.SPOTS_DIR, f"{spot['id']}.json")
+        if os.path.exists(path) and not args.force:
+            with open(path, encoding="utf-8") as fh:
+                rec = json.load(fh)
+            skipped += 1
+            print(f"  [{i}/{total}] {spot['name']} — cached")
+        else:
+            sea = fetch_sea_level(spot["lat"], spot["lon"])
+            ero = fetch_erosion(spot["lat"], spot["lon"])
+            rec = {**spot, "sea_level": sea, "erosion": ero}
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump(rec, fh, indent=2)
+            fetched += 1
+            print(
+                f"  [{i}/{total}] {spot['name']} ({spot.get('subregion')}) "
+                f"— sea_level={sea['status']} erosion={ero['status']} ({ero.get('risk_level')})"
+            )
+        index.append(_index_entry(rec))
+        _write_index(index, processed=i, total=total)  # keep index current as we go
 
-    payload = {
-        "metadata": {
-            "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-            "version": "V1-skeleton",
-            "scope": "England — sea level rise + coastal erosion (sea temperature deferred)",
-            "sources": {
-                "sea_level": {
-                    "name": "Met Office UKCP18 Time-mean Sea Level Projections to 2100",
-                    "scenario": "RCP8.5, 50th percentile",
-                    "baseline": "1981-2000",
-                    "endpoint": config.SEA_LEVEL_URL,
-                    "licence": "Open Government Licence v3.0",
-                },
-                "erosion": {
-                    "name": "National Coastal Erosion Risk Mapping (NCERM) 2024",
-                    "publisher": "Environment Agency",
-                    "climate_allowance": f"{config.EROSION_CC}th pct (Higher Central, ~RCP8.5)",
-                    "endpoint": config.EROSION_BASE_URL,
-                    "licence": "Open Government Licence v3.0",
-                },
-            },
-            "count": len(records),
-        },
-        "breaks": records,
-    }
-
-    with open(args.out, "w", encoding="utf-8") as fh:
-        json.dump(payload, fh, indent=2)
-    print(f"\nWrote {len(records)} breaks to {args.out}")
-
-    # Quick summary of data completeness.
-    sl_ok = sum(1 for r in records if r["sea_level"]["status"] == "ok")
-    er_ok = sum(1 for r in records if r["erosion"]["status"] == "ok")
-    print(f"  sea level ok: {sl_ok}/{len(records)}   erosion ok: {er_ok}/{len(records)}")
+    print(f"\nWrote index ({len(index)} spots) to {config.INDEX_JSON}")
+    print(f"  detail files in {config.SPOTS_DIR}/   (fetched {fetched}, cached {skipped})")
+    sl_ok = sum(1 for e in index if e["sea_level_2100"] is not None)
+    er_ok = sum(1 for e in index if e["risk_level"] != "unknown")
+    print(f"  sea level resolved: {sl_ok}/{len(index)}   erosion classified: {er_ok}/{len(index)}")
 
 
 if __name__ == "__main__":

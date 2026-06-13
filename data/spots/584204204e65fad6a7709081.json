@@ -1,0 +1,36 @@
+{
+  "id": "584204204e65fad6a7709081",
+  "name": "Seaton Carew",
+  "lat": 54.65996,
+  "lon": -1.17997,
+  "subregion": "Northeast England",
+  "rating": 0.0,
+  "sea_level": {
+    "status": "ok",
+    "scenario": "RCP8.5 50th percentile",
+    "baseline": "1981-2000",
+    "unit": "cm",
+    "anomaly_cm": {
+      "2030": 13.7,
+      "2040": 19.3,
+      "2050": 25.8,
+      "2060": 33.2,
+      "2070": 41.4,
+      "2080": 50.3,
+      "2090": 59.7,
+      "2100": 69.6
+    },
+    "n_polygons": 2,
+    "buffer_m": 2000
+  },
+  "erosion": {
+    "climate_allowance": "Higher Central (70th pct, ~RCP8.5)",
+    "status": "no_nearby_frontage",
+    "medium_term_with_smp": null,
+    "long_term_with_smp": null,
+    "medium_term_no_intervention": null,
+    "long_term_no_intervention": null,
+    "nearest_frontage_m": 3564,
+    "risk_level": "unknown"
+  }
+}

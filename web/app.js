@@ -1,13 +1,15 @@
-/* Surf Spot Climate Resilience Explorer — V1 skeleton frontend.
+/* Surf Spot Climate Resilience Explorer — frontend.
  *
- * Loads the pre-processed static surf_breaks.json, plots breaks on a Leaflet
- * map colour-coded by long-term erosion risk, and opens a profile panel showing
- * sea level rise (decadal time series) and coastal erosion risk per break.
+ * Lazy-load architecture: loads a lightweight index (spots_index.json) for the
+ * map markers, then fetches each spot's detail file (data/spots/<id>.json) on
+ * click — sea level rise (decadal time series) and coastal erosion risk.
  *
- * No build step, no API calls at runtime — all data is baked into the JSON.
+ * No build step, no live external APIs at runtime — only static files from this
+ * host (the index up front, one small detail file per click).
  */
 
-const DATA_URL = "../data/surf_breaks.json";
+const INDEX_URL = "../data/spots_index.json";
+const SPOT_URL = (id) => `../data/spots/${id}.json`;
 
 const RISK_COLOURS = {
   high: "#e4572e",
@@ -27,6 +29,8 @@ let map;
 let selectedMarker = null;
 let insetMap = null; // small recession-zone map inside the panel
 let insetNfiLayer = null; // "no future intervention" comparison layer
+let currentSpotId = null; // guards against races when switching spots mid-fetch
+const detailCache = new Map(); // id -> fetched detail record
 
 // --------------------------------------------------------------------------- //
 // Bootstrap
@@ -46,31 +50,34 @@ async function init() {
 
   let payload;
   try {
-    const resp = await fetch(DATA_URL);
+    const resp = await fetch(INDEX_URL);
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     payload = await resp.json();
   } catch (err) {
     document.getElementById("attribution").innerHTML =
-      `<span style="color:#ffd0c4">Could not load data (${err.message}). ` +
+      `<span style="color:#ffd0c4">Could not load the spot index (${err.message}). ` +
       `Serve this folder over HTTP and run preprocess.py first.</span>`;
     return;
   }
 
   renderAttribution(payload.metadata);
-  const markers = payload.breaks.map(addBreakMarker);
+  const spots = payload.spots || [];
+  const markers = spots.map(addSpotMarker);
 
-  // Fit to all markers so the full English coastline of breaks is visible.
-  const group = L.featureGroup(markers);
-  map.fitBounds(group.getBounds().pad(0.15));
+  // Fit to all markers so the full English coastline of spots is visible.
+  if (markers.length) {
+    map.fitBounds(L.featureGroup(markers).getBounds().pad(0.1));
+  }
 
-  // Optional deep link: ?break=<id> opens that break's panel on load;
+  // Optional deep link: ?spot=<id> (or legacy ?break=<id>) opens that spot;
   // &nfi=1 also switches on the "no defences" comparison outline.
   const params = new URLSearchParams(location.search);
-  const wanted = params.get("break");
+  const wanted = params.get("spot") || params.get("break");
   if (wanted != null) {
-    const i = payload.breaks.findIndex((b) => String(b.id) === wanted);
-    if (i !== -1) {
-      markers[i].fire("click");
+    const entry = spots.find((s) => String(s.id) === wanted);
+    if (entry) {
+      selectMarker(markers[spots.indexOf(entry)]);
+      await openPanel(entry); // wait for detail so the toggle exists
       if (params.get("nfi") === "1") {
         const t = document.getElementById("tgl-nfi");
         if (t) {
@@ -85,42 +92,77 @@ async function init() {
 // --------------------------------------------------------------------------- //
 // Markers
 // --------------------------------------------------------------------------- //
-function addBreakMarker(brk) {
-  const risk = (brk.erosion && brk.erosion.risk_level) || "unknown";
-  const marker = L.circleMarker([brk.lat, brk.lon], {
-    radius: 8,
+function addSpotMarker(entry) {
+  const risk = entry.risk_level || "unknown";
+  const marker = L.circleMarker([entry.lat, entry.lon], {
+    radius: 7,
     color: "#ffffff",
     weight: 2,
     fillColor: RISK_COLOURS[risk] || RISK_COLOURS.unknown,
     fillOpacity: 0.95,
   }).addTo(map);
 
-  marker.bindTooltip(brk.name, { direction: "top", offset: [0, -6] });
+  marker.bindTooltip(entry.name, { direction: "top", offset: [0, -6] });
   marker.on("click", () => {
-    if (selectedMarker) selectedMarker.getElement()?.classList.remove("selected");
-    selectedMarker = marker;
-    marker.getElement()?.classList.add("selected");
-    openPanel(brk);
+    selectMarker(marker);
+    openPanel(entry);
   });
   return marker;
+}
+
+function selectMarker(marker) {
+  if (selectedMarker) selectedMarker.getElement()?.classList.remove("selected");
+  selectedMarker = marker;
+  marker.getElement()?.classList.add("selected");
 }
 
 // --------------------------------------------------------------------------- //
 // Panel
 // --------------------------------------------------------------------------- //
-function openPanel(brk) {
-  destroyInset(); // tear down any inset from a previously selected break
-  document.getElementById("panel-content").innerHTML = renderPanel(brk);
+async function loadDetail(id) {
+  if (detailCache.has(id)) return detailCache.get(id);
+  const resp = await fetch(SPOT_URL(id));
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+  const rec = await resp.json();
+  detailCache.set(id, rec);
+  return rec;
+}
+
+async function openPanel(entry) {
+  destroyInset(); // tear down any inset from a previously selected spot
+  currentSpotId = entry.id;
+
+  // Show the panel immediately with a loading placeholder, then fill in detail.
+  document.getElementById("panel-content").innerHTML = `
+    <h2 class="break-name">${esc(entry.name)}</h2>
+    <p class="break-region">${esc(entry.subregion || "")}</p>
+    <p class="loading">Loading climate data…</p>`;
   const panel = document.getElementById("panel");
   panel.hidden = false;
-  // allow the browser a frame so the CSS transition runs
   requestAnimationFrame(() => panel.classList.add("open"));
-  buildErosionInset(brk);
+
+  let rec;
+  try {
+    rec = await loadDetail(entry.id);
+  } catch (err) {
+    if (currentSpotId === entry.id) {
+      document.getElementById("panel-content").innerHTML = `
+        <h2 class="break-name">${esc(entry.name)}</h2>
+        <p class="break-region">${esc(entry.subregion || "")}</p>
+        <p class="unavailable">Couldn't load this spot's data (${esc(err.message)}).</p>`;
+    }
+    return;
+  }
+  if (currentSpotId !== entry.id) return; // user clicked another spot meanwhile
+
+  document.getElementById("panel-content").innerHTML = renderPanel(rec);
+  buildErosionInset(rec);
 }
 
 function closePanel() {
   document.getElementById("panel").classList.remove("open");
   destroyInset();
+  currentSpotId = null;
   if (selectedMarker) {
     selectedMarker.getElement()?.classList.remove("selected");
     selectedMarker = null;
@@ -130,7 +172,7 @@ function closePanel() {
 function renderPanel(brk) {
   return `
     <h2 class="break-name">${esc(brk.name)}</h2>
-    <p class="break-region">${esc(brk.region)}</p>
+    <p class="break-region">${esc(brk.subregion || brk.region || "")}</p>
     ${renderErosion(brk.erosion)}
     ${renderSeaLevel(brk.sea_level)}
     <p class="disclaimer">
