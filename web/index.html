@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <!-- Leaflet (CDN). No API key required; uses OpenStreetMap tiles. -->
   <link
     rel="stylesheet"
@@ -25,8 +25,19 @@
     <h1>Surf Spot Climate Resilience Explorer</h1>
     <p class="tagline">How climate change is projected to reshape England's surf breaks</p>
   </header>
-
+  
   <div id="map" aria-label="Map of England surf breaks"></div>
+  
+  <svg width="0" height="0" style="position:absolute">
+    <filter id="posterize" color-interpolation-filters="sRGB">
+      <feComponentTransfer>
+        <!-- 12 bins; the bottom 4 all become 0 -->
+        <feFuncR type="discrete" tableValues="0 0 0 0 0.2 0.2 0.4 0.4 0.6 0.8 0.8 1"/>
+        <feFuncG type="discrete" tableValues="0 0 0 0.2 0.2 0.4 0.4 0.6 0.6 0.8 0.8 1"/>
+        <feFuncB type="discrete" tableValues="0 0 0.2 0.2 0.4 0.4 0.6 0.6 0.8 0.8 1 1"/>
+      </feComponentTransfer>
+    </filter>
+  </svg>
 
   <!-- Map legend -->
   <div class="legend" id="legend">
