@@ -39,11 +39,8 @@ init();
 
 async function init() {
   map = L.map("map", { zoomControl: true }).setView([52.8, -2.6], 6);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; ' +
-      '<a href="https://carto.com/attributions">CARTO</a>',
-    maxZoom: 19,
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+    maxZoom: 19, tileSize: 1024, zoomOffset: -2, className: 'pixel-tiles'
   }).addTo(map);
 
   document.getElementById("panel-close").addEventListener("click", closePanel);
@@ -94,15 +91,22 @@ async function init() {
 // --------------------------------------------------------------------------- //
 function addSpotMarker(entry) {
   const risk = entry.risk_level || "unknown";
-  const marker = L.circleMarker([entry.lat, entry.lon], {
-    radius: 7,
-    color: "#ffffff",
-    weight: 2,
-    fillColor: RISK_COLOURS[risk] || RISK_COLOURS.unknown,
-    fillOpacity: 0.95,
-  }).addTo(map);
+  const colour = RISK_COLOURS[risk] || RISK_COLOURS.unknown;
 
-  marker.bindTooltip(entry.name, { direction: "top", offset: [0, -6] });
+  const icon = L.divIcon({
+    className: "pixel-marker-wrap",
+    html: `<div class="pixel-marker" style="background:${colour}"></div>`,
+    iconSize: [16, 16],
+    iconAnchor: [8, 8],
+  });
+
+  const marker = L.marker([entry.lat, entry.lon], { icon }).addTo(map);
+
+  marker.bindTooltip(entry.name, {
+    direction: "top",
+    offset: [0, -10],
+    className: "pixel-tooltip",
+  });
   marker.on("click", () => {
     selectMarker(marker);
     openPanel(entry);
@@ -292,9 +296,7 @@ function buildErosionInset(brk) {
   // initialises and vector layers (zones, marker) silently fail to paint.
   // fit() refines this once the container has settled.
   insetMap.setView([brk.lat, brk.lon], 14);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-    maxZoom: 19,
-  }).addTo(insetMap);
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}").addTo(insetMap);
   L.control.scale({ imperial: false, position: "bottomright" }).addTo(insetMap);
 
   const bounds = L.latLngBounds([]);

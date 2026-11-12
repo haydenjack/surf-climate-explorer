@@ -3,7 +3,7 @@
    Mobile-first. Side drawer on desktop, bottom sheet on mobile. */
 
    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
+   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
    :root {
      /* Core palette — drawn from the uploaded swatch */
      --blush:       #c9bfba;   /* warm pinkish-grey */
@@ -36,7 +36,7 @@
    html, body {
      margin: 0;
      height: 100%;
-     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+     font-family: 'Press Start 2P', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
      color: var(--ink);
      background: var(--near-black);
    }
@@ -326,16 +326,64 @@
      position: absolute;
      bottom: 0; right: 0;
      z-index: 1000;
-     font-size: 0.63rem;
+     font-size: 0.5rem;
      color: var(--blush);
      background: rgba(14, 23, 32, 0.72);
      padding: 4px 10px;
      border-radius: 7px 0 0 0;
-     font-weight: 500;
+     font-weight: 300;
    }
    .app-footer a { color: var(--ocean-light); }
    
-   /* Marker selection glow */
-   .leaflet-interactive.selected {
-     filter: drop-shadow(0 0 7px rgba(107, 141, 181, 0.95));
-   }
+   .selected .pixel-marker {
+    border-color: #ffd400;
+    box-shadow:
+      0 0 0 2px #000,          /* hard outer ring */
+      3px 3px 0 2px #000;      /* chunky offset shadow */
+    animation: pixel-blink 0.8s steps(1) infinite;
+    }
+  
+    @keyframes pixel-blink {
+    50% { border-color: #fff; }
+    }
+  
+
+   .pixel-tiles { image-rendering: crisp-edges;
+                  image-rendering: pixelated;
+                  filter: saturate(1.4) contrast(1) url(#posterize); }
+
+  .pixel-marker-wrap { background: none; border: none; }
+
+  .pixel-marker {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 2px #000, 2px 2px 0 #000;      /* hard shadow, no blur */
+    box-sizing: content-box;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  
+  /* one-pixel highlight in the corner for a bit of 8-bit shine */
+  .pixel-marker::after {
+    content: "";
+    position: absolute;
+    top: 2px; left: 2px;
+    width: 4px; height: 4px;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  
+  .pixel-marker-wrap:hover .pixel-marker { transform: translate(-1px, -1px) rotate(45deg); }
+  
+  /* matching tooltip */
+  .pixel-tooltip {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 0;
+    box-shadow: 2px 2px 0 #000;
+    font-family: "Press Start 2P", monospace;
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+  .pixel-tooltip::before { display: none; }  /* hide the little arrow */
